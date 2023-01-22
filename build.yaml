@@ -17,4 +17,4 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    workingDir: 'run build'
+    customCommand: 'run build'
