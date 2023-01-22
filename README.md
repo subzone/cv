@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my first react app playground. I wanted to create nice CV and to play around with React.
 
 ## Available Scripts
 
