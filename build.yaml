@@ -18,3 +18,11 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'run build'
+
+- task: AzureFileCopy@5
+  inputs:
+    SourcePath: 'build'
+    azureSubscription: 'Azure subscription 1(836dac06-9190-4ca2-980f-c1fa69e59375)'
+    Destination: 'AzureBlob'
+    storage: 'careerbaseweudev'
+    ContainerName: '$web'
