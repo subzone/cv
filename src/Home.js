@@ -1,14 +1,20 @@
 import React from 'react';
+import About from './About';
+import Education from './Education';
+import Experience from './Experience';
+import Projects from './Projects';
+import Skills from './Skills';
 
-class Home extends React.Component {
-    render() {
-        return (
-            <div>
-                <h1>Welcome to MyCV</h1>
-                <p>This is the home page.</p>
-            </div>
-        );
-    }
+function Home() {
+    return (
+        <div>
+        <About />
+        <Experience />
+        <Education />  
+        <Skills />
+        <Projects />
+      </div>
+    );
 }
 
 export default Home;

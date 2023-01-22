@@ -1,45 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-import {BrowserRouter} from 'react-router-dom';
-import Navbar from './Navbar';
-import Experience from './experience';
-import { Route } from 'react-router-dom';
-import { Routes } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Education from './Education';
+import Experience from './Experience';
 import Projects from './Projects';
+import Skills from './Skills';
+import './dark-theme.css';
+import Footer from './Footer';
 
 
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-      <Navbar />
+      <nav>
+        <Link to="/" className="nav-link">Home</Link>
+        <Link to="/about" className="nav-link">About</Link>
+        <Link to="/experience" className="nav-link">Experience</Link>
+        <Link to="/education" className="nav-link">Education</Link>
+        <Link to="/projects" className="nav-link">Projects</Link>
+      </nav>
+      <div className='dark-theme'>
       <Routes>
-      <Route path="/" exact component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/experience" component={Experience} />
-      <Route path="/education" component={Education} />
-      <Route path="/projects" component={Projects} />
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/experience' element={<Experience />} />
+        <Route path='/education' element={<Education />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/skills' element={<Skills />} />
       </Routes>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </div><div className='cv'><Footer /></div>
     </BrowserRouter>
   );
 }
 
 export default App;
+
+
