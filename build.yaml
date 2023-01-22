@@ -10,7 +10,11 @@ steps:
     versionSpec: '18.12.1'
   displayName: 'Install Node.js'
 
-- script: |
-    npm install 
-    npm run build
-  displayName: 'Npm install and build'
+- task: Npm@1
+  inputs:
+    command: 'install'
+
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: 'run build'
