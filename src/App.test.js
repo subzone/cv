@@ -3,7 +3,7 @@ const React = require('react');
 const { render, getByAltText, screen, fireEvent } = require('@testing-library/react');
 const { expect } = require('@testing-library/jest-dom');
 
-const App = require('../src/App').default;
+const App = require('./App').default;
 
 describe('App', () => {
   it('should render without crashing', () => {

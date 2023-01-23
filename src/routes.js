@@ -1,10 +1,11 @@
 import React from 'react';
 import Experience from './Experience';
-import Home from './Home';
-import About from './About';
-import Education from './Education';
-import Projects from './Projects';
-import Skills from './Skills';
+import Home from './components/Home';
+import About from './components/About';
+import Education from './components/Education';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import ContactForm from './components/ContactForm';
 
 export const routes = [
     { path: '/', element: <Home /> },
@@ -13,5 +14,6 @@ export const routes = [
     { path: '/education', element: <Education /> },
     { path: '/projects', element: <Projects /> },
     { path: '/skills', element: <Skills /> },
+    { path: '/contact', element: <ContactForm /> },
   ];
   
