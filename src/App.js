@@ -8,7 +8,7 @@ import Projects from './Projects';
 import Skills from './Skills';
 import './dark-theme.css';
 import Footer from './Footer';
-
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
@@ -29,7 +29,10 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/skills' element={<Skills />} />
       </Routes>
-      </div><div className='cv'><Footer /></div>
+      </div><div className='cv'><Helmet>
+        <html lang="en" />
+        <meta name="theme-color" content="#E6E6FA" />
+      </Helmet><Footer /></div>
     </BrowserRouter>
   );
 }

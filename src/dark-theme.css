@@ -9,6 +9,9 @@ body {
     margin-left: 20px;
     margin-right: 20px;
   }
+  p{
+    width: 80%;
+  }
   /* Navbar styles */
   nav {
     background-color: #333;

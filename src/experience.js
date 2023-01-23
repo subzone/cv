@@ -5,7 +5,7 @@ const Experience = () => {
         <div>
             <h1>Professional Experience</h1>
             <p><h2>Current Position:</h2> <h2>Head of Technology - Senior DevOps Engineer</h2></p>
-            <p>Company: <a href="https://htecgroup.com">High Tech Engeneering Center Belgrade</a></p>
+            <p>Company: <a href="https://htecgroup.com" target="_blank">High Tech Engeneering Center Belgrade</a></p>
             <p>Date Started: <button class="button-12" role="button">01.07.2022</button></p>
             <p>Position Summary:</p>
             <p><ul>
@@ -17,7 +17,7 @@ const Experience = () => {
             </ul></p>
             <h1>Previous positions</h1>
             <h2>Senior DevOps Engineer - Technology Lead</h2>
-            <p>Company: <a href="https://htecgroup.com">High Tech Engeneering Center Belgrade</a></p>
+            <p>Company: <a href="https://htecgroup.com" target="_blank">High Tech Engeneering Center Belgrade</a></p>
             <p>Date Started: <button class="button-12" role="button">01.09.2020</button> To: <button class="button-12" role="button">01.07.2022</button></p>
             <p>Position Summary:</p>
             <p><ul>
@@ -28,7 +28,7 @@ const Experience = () => {
                 <li>Technical Interviews</li>
                 </ul></p>
             <h2>DevOps Engineer</h2>
-            <p>Company: <a href="https://www.wolterskluwer.com">Wolterskluwer(subcontractor)</a></p>
+            <p>Company: <a href="https://www.wolterskluwer.com" target="_blank">Wolterskluwer(subcontractor)</a></p>
             <p>Date Started: <button class="button-12" role="button">01.08.2018</button> To: <button class="button-12" role="button">01.09.2020</button></p>
             <p>Position Summary:</p>
             <p><ul>
@@ -40,7 +40,7 @@ const Experience = () => {
                 <li>Monitoring configuration with New Relic, ELK, Azure Log Analytics</li>
                 </ul></p>
             <h2>Linux Administrator</h2>
-            <p>Company: <a href="https://intens.rs">Intens Novi Sad</a></p>
+            <p>Company: <a href="https://intens.rs" target="_blank">Intens Novi Sad</a></p>
             <p>Date Started: <button class="button-12" role="button">01.09.2017</button> To: <button class="button-12" role="button">01.09.2018</button></p>
             <p>Position Summary:</p>
             <p><ul>
@@ -50,7 +50,7 @@ const Experience = () => {
                 <li>With PNP4Nagios, and RRD Tool Implementation connected metrics with Grafana implementation</li>
                 </ul></p>
             <h2>IT Assistant</h2>
-            <p>Company: <a href="https://farmina.com/">Farmina Pet Foods</a></p>
+            <p>Company: <a href="https://farmina.com/"target="_blank">Farmina Pet Foods</a></p>
             <p>Date Started: <button class="button-12" role="button">01.10.2016</button> To: <button class="button-12" role="button">01.09.2017</button></p>
             <p>Position Summary:</p>
             <p><ul>
@@ -60,7 +60,7 @@ const Experience = () => {
                 <li>Managing some specific industrial SW & HW, HA WiFi system, DR etc.</li>
                 </ul></p>
             <h2>System Administrator - IT Engineer</h2>
-            <p>Company: <a href="https://dzindjija.rs">Primary Health Care Center "Dr Milorad-Mika Pavlović" Inđija</a></p>
+            <p>Company: <a href="https://dzindjija.rs" target="_blank">Primary Health Care Center "Dr Milorad-Mika Pavlović" Inđija</a></p>
             <p>Date Started: <button class="button-12" role="button">01.09.2008</button> To: <button class="button-12" role="button">01.10.2016</button></p>
             <p>Position Summary:</p>
             <p><ul>

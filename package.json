@@ -12,8 +12,9 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.7.1",
     "react-router-dom": "^6.7.0",
-    "react-scripts": "5.0.1",
     "react-stars": "^2.2.5",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
@@ -47,6 +48,7 @@
     "csp-html-webpack-plugin": "^5.1.0",
     "customize-cra": "^1.0.0",
     "jest-junit": "^15.0.0",
-    "react-app-rewired": "^2.2.1"
+    "react-app-rewired": "^2.2.1",
+    "react-scripts": "5.0.1"
   }
 }
