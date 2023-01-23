@@ -1,14 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Education from './Education';
-import Experience from './Experience';
-import Projects from './Projects';
-import Skills from './Skills';
+import Home from './components/Home';
+import About from './components/About';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
 import './dark-theme.css';
-import Footer from './Footer';
+import Footer from './components/Footer';
 import { Helmet } from 'react-helmet';
+import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Link to="/education" className="nav-link">Education</Link>
         <Link to="/projects" className="nav-link">Projects</Link>
       </nav>
-      <div className='dark-theme'>
+      <div className='dark-theme'><p></p>
+           
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -28,8 +30,9 @@ function App() {
         <Route path='/education' element={<Education />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/skills' element={<Skills />} />
+        <Route path='/contact' element={<ContactForm />} />
       </Routes>
-      </div><div className='cv'><Helmet>
+      </div><div className='cv'> <Helmet>
         <html lang="en" />
         <meta name="theme-color" content="#E6E6FA" />
       </Helmet><Footer /></div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import StarsRating from './StarsRating';
+import StarsRating from '../StarsRating';
 
 
 const Skills = () => {

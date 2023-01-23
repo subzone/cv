@@ -3,7 +3,7 @@ import React from 'react';
 class Projects extends React.Component {
     render() {
         return (
-            <div>
+            <div><br /><br />
                 <h1>Most Interesting Projects that I had a part in</h1>
                 <h2>GreatPlaceToWork</h2>
                 <p>Global employee satisfaction survey and culture management platform.</p>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Experience = () => {
     return (
-        <div>
+        <div><br /><br />
             <h1>Professional Experience</h1>
             <p><h2>Current Position:</h2> <h2>Head of Technology - Senior DevOps Engineer</h2></p>
             <p>Company: <a href="https://htecgroup.com" target="_blank">High Tech Engeneering Center Belgrade</a></p>
