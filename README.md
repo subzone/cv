@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# My CV React app
 
 This is my first react app playground. I wanted to create nice CV and to play around with React.
 
