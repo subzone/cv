@@ -7,7 +7,6 @@ const App = require('../src/App').default;
 
 describe('App', () => {
   it('should render without crashing', () => {
-    // const div = document.createElement('div');
     const root = ReactDOM.createRoot(document.createElement('root'));
     root.render(<App />);
   });
