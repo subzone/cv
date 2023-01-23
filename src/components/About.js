@@ -49,13 +49,13 @@ class About extends React.Component {
             <p>Current status of this playground is, github repo created, code commited, CICD pipeline added to repository. Deployment target is some storage account on Azure, and hopefully this can be my door to FrontEnd development, as to better understand how those guys think about development process itself.</p>
             <p>Plan that I have on my mind is to add:</p>
             <ul>
-               <li>Static Code Analysis - hopefully SonarCloud</li>
+               <li>Static Code Analysis - Added SonarCloud</li>
                <li>Dockerfile - distroless nginx</li>
                <li>Vulnerability scan - probably trivy or similar</li>
                <li>CSP policy v3 - Done</li>
                <li>Blog - Future development</li>
                <li>Mail Newsletter - DevOps topics based</li>
-               <li><Link to="/contact" className="nav=link">ContactForm</Link></li>
+               <li><Link to="/contact" className="nav=link">ContactForm</Link> Feel free to ping an email if you have any questions.</li>
             </ul>
          </div>
         );

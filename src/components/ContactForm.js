@@ -1,9 +1,5 @@
-// import './contact.css';
 import React, { useState } from "react";
-import emailjs from 'emailjs-com';
-import { init } from 'emailjs-com';
-init('Vk9H7QsaxPn_8i1fx');
-
+import emailjs, { init }  from 'emailjs-com';
 
 const ContactForm = () => {
     const [name, setName] = useState('');
@@ -34,7 +30,7 @@ const ContactForm = () => {
         }
     };
     const isValidEmail = email => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return regex.test(String(email).toLowerCase());
     };
     return (
