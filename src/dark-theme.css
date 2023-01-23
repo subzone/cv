@@ -133,3 +133,95 @@ footer {
   padding: 8px;
   text-align: center;
 }
+
+#contact-form {
+  position: absolute;
+  background: #000000;
+  color: #FFF;
+  font-family: sans-serif;
+  padding: 20px;
+  top: 25%;
+  left: 25%;
+  /* transform: translate(-50%, -50%); */
+  box-shadow: 0 11px 15px -7px rgba(227, 250, 97, 0.2), 0 24px 38px 3px rgba(243, 213, 213, 0.14), 0 9px 46px 8px rgba(253, 253, 253, 0.12);
+
+  input {
+      width: 100%;
+      border: 0;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+  }
+
+  textarea {
+      height: 200px;
+      resize: vertical;
+  }
+
+  button {
+      width: 100%;
+      padding: 10px;
+      border: 0;
+      cursor: pointer;
+      background: #fca253;
+      font-weight: bold;
+      color: #FFF;
+      font-size:24px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+  }
+
+  span {
+      display: none;
+      text-align: center;
+
+      &.visible {
+          display: block;
+      }
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=email] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=email]:hover {
+  background-color: #fcfce0;
+}
+
+button[type=submitmail] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #000000;
+  padding: 20px;
+}

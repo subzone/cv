@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
-import About from './About';
+import About from './components/About';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
@@ -20,7 +20,6 @@ function App() {
         <Link to="/experience" className="nav-link">Experience</Link>
         <Link to="/education" className="nav-link">Education</Link>
         <Link to="/projects" className="nav-link">Projects</Link>
-        <Link to="/contact" className="nav=link">ContactForm</Link>
       </nav>
       <div className='dark-theme'>
       <Routes>

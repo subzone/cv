@@ -1,44 +1,52 @@
-import React from 'react';
+// import './contact.css';
+import React, { useState } from "react";
+import emailjs from 'emailjs-com';
+import { init } from 'emailjs-com';
+init('Vk9H7QsaxPn_8i1fx');
+
+
 const ContactForm = () => {
-    const [formStatus, setFormStatus] = React.useState('Send')
-    const onSubmit = (e) => {
-      e.preventDefault()
-      setFormStatus('Submitting...')
-      const { name, email, message } = e.target.elements
-      let conFom = {
-        name: name.value,
-        email: email.value,
-        message: message.value,
-      }
-      console.log(conFom)
-    }
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [emailSent, setEmailSent] = useState(false);
+    const submit = () => {
+        if (name && email && message) {
+            const serviceId = 'service_r63plup';
+            const templateId = 'template_ijd8clx';
+            const userId = 'Vk9H7QsaxPn_8i1fx';
+            const templateParams = {
+                name,
+                email,
+                message
+            };
+
+            emailjs.send(serviceId, templateId, templateParams, userId)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
+
+            setName('');
+            setEmail('');
+            setMessage('');
+            setEmailSent(true);
+        } else {
+            alert('Please fill in all fields.');
+        }
+    };
+    const isValidEmail = email => {
+        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return regex.test(String(email).toLowerCase());
+    };
     return (
-      <div className="container mt-5">
-        <h2 className="mb-3">Feel free to ask me anything</h2>
-        <form onSubmit={onSubmit}>
-          <div className="mb-3">
-            <label className="form-label" htmlFor="name">
-              Name
-            </label>
-            <input className="form-control" type="text" id="name" required />
-          </div>
-          <div className="mb-3">
-            <label className="form-label" htmlFor="email">
-              Email
-            </label>
-            <input className="form-control" type="email" id="email" required />
-          </div>
-          <div className="mb-3">
-            <label className="form-label" htmlFor="message">
-              Message
-            </label>
-            <textarea className="form-control" id="message" required />
-          </div>
-          <button className="btn btn-danger" type="submit">
-            {formStatus}
-          </button>
-        </form>
-      </div>
-    )
-  }
+        <div id="contact-form">
+            <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} /><br />
+            <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} /><br />
+            <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea><br />
+            <button type="submitmail" onClick={submit}>Send Message</button><br />
+
+            <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
+        </div>
+    );
+};
+  
 export default ContactForm;

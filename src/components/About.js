@@ -1,5 +1,6 @@
 import React from 'react';
-import me from './me.jpg';
+import { Link } from 'react-router-dom';
+import me from '../me.jpg';
 
 class About extends React.Component {
     render() {
@@ -54,7 +55,7 @@ class About extends React.Component {
                <li>CSP policy v3 - Done</li>
                <li>Blog - Future development</li>
                <li>Mail Newsletter - DevOps topics based</li>
-               <li>Contact Form</li>
+               <li><Link to="/contact" className="nav=link">ContactForm</Link></li>
             </ul>
          </div>
         );
