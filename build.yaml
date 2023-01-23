@@ -20,14 +20,6 @@ steps:
     command: 'custom'
     customCommand: 'run build'
 
-- task: AzureFileCopy@2
-  inputs:
-    SourcePath: 'build'
-    azureSubscription: 'Azure subscription 1(836dac06-9190-4ca2-980f-c1fa69e59375)'
-    Destination: 'AzureBlob'
-    storage: 'careerbaseweudev'
-    ContainerName: '$web'
-
 - task: SonarCloudPrepare@1
   inputs:
     SonarCloud: 'SonarCloud'
@@ -40,3 +32,11 @@ steps:
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
+
+- task: AzureFileCopy@2
+  inputs:
+    SourcePath: 'build'
+    azureSubscription: 'Azure subscription 1(836dac06-9190-4ca2-980f-c1fa69e59375)'
+    Destination: 'AzureBlob'
+    storage: 'careerbaseweudev'
+    ContainerName: '$web'
