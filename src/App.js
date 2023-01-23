@@ -21,7 +21,8 @@ function App() {
         <Link to="/education" className="nav-link">Education</Link>
         <Link to="/projects" className="nav-link">Projects</Link>
       </nav>
-      <div className='dark-theme'>
+      <div className='dark-theme'><p></p>
+           
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -31,7 +32,7 @@ function App() {
         <Route path='/skills' element={<Skills />} />
         <Route path='/contact' element={<ContactForm />} />
       </Routes>
-      </div><div className='cv'><Helmet>
+      </div><div className='cv'> <Helmet>
         <html lang="en" />
         <meta name="theme-color" content="#E6E6FA" />
       </Helmet><Footer /></div>

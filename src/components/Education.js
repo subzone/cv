@@ -3,7 +3,7 @@ import React from 'react';
 class Education extends React.Component {
     render() {
         return (
-            <div>
+            <div><br /><br />
                 <h1>Education</h1>
                 <p>Highest national degree lvl: VI degree,  IT Engineer</p>
                 <p>VTS Doboj, Doboj, BiH</p>

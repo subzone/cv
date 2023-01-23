@@ -137,11 +137,13 @@ footer {
 #contact-form {
   position: absolute;
   background: #000000;
+  /* display:flex; */
+  align-items: center;
   color: #FFF;
   font-family: sans-serif;
   padding: 20px;
   top: 25%;
-  left: 25%;
+  left: 33%;
   /* transform: translate(-50%, -50%); */
   box-shadow: 0 11px 15px -7px rgba(227, 250, 97, 0.2), 0 24px 38px 3px rgba(243, 213, 213, 0.14), 0 9px 46px 8px rgba(253, 253, 253, 0.12);
 
