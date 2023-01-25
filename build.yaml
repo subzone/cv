@@ -42,3 +42,13 @@ steps:
     Destination: 'AzureBlob'
     storage: 'careerbaseweudev'
     ContainerName: '$web'
+  
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(1)(836dac06-9190-4ca2-980f-c1fa69e59375)'
+    appType: 'webAppLinux'
+    WebAppName: 'mymilenko'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/build/*'
+    RuntimeStack: 'NODE|18-lts'
