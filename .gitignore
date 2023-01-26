@@ -10,7 +10,7 @@
 
 # production
 /build
-!*build/.well-known/acme-challenge/zzDB-Aw-cTSqgC_QsqZPEI74G9kH-fWSp1v-CTfGv1k
+!*/build/.well-known/acme-challenge/zzDB-Aw-cTSqgC_QsqZPEI74G9kH-fWSp1v-CTfGv1k
 # misc
 .DS_Store
 .env.local
