@@ -43,20 +43,20 @@ steps:
     storage: 'careerbaseweudev'
     ContainerName: '$web'
 
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(Build.Repository.LocalPath)/build/'
-    includeRootFolder: false
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    replaceExistingArchive: true
+# - task: ArchiveFiles@2
+#   inputs:
+#     rootFolderOrFile: '$(Build.Repository.LocalPath)/build/'
+#     includeRootFolder: false
+#     archiveType: 'zip'
+#     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+#     replaceExistingArchive: true
 
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure subscription 1(1)(836dac06-9190-4ca2-980f-c1fa69e59375)'
-    appType: 'webAppLinux'
-    WebAppName: 'mymilenko'
-    packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    RuntimeStack: 'NODE|18-lts'
-    StartupCommand: 'ng serve'
+# - task: AzureRmWebAppDeployment@4
+#   inputs:
+#     ConnectionType: 'AzureRM'
+#     azureSubscription: 'Azure subscription 1(1)(836dac06-9190-4ca2-980f-c1fa69e59375)'
+#     appType: 'webAppLinux'
+#     WebAppName: 'mymilenko'
+#     packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+#     RuntimeStack: 'NODE|18-lts'
+#     StartupCommand: 'ng serve'

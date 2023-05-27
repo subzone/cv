@@ -9,13 +9,14 @@
     "bootstrap": "^5.2.3",
     "emailjs-com": "^3.2.0",
     "history": "^5.3.0",
-    "jest": "^29.3.1",
+    "jest": "^29.5.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.7.1",
     "react-router-dom": "^6.10.0",
+    "react-icons": "^4.8.0",
+
     "react-stars": "^2.2.5",
     "styled-components": "^5.3.6",
     "web-vitals": "^3.1.1"
@@ -45,7 +46,7 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/react": "^14.0.0",
     "csp-html-webpack-plugin": "^5.1.0",
     "customize-cra": "^1.0.0",
     "jest-junit": "^15.0.0",
