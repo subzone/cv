@@ -14,6 +14,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Load environment variables
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.LIVE_AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.LIVE_AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: ${{ secrets.LIVE_AWS_REGION }}
+      run: |
+        echo "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> $GITHUB_ENV
+        echo "AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" >> $GITHUB_ENV
+        echo "AWS_REGION=$AWS_REGION" >> $GITHUB_ENV
+    
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
