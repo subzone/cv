@@ -3,7 +3,7 @@ name: Deploy to CloudFront
 on:
   push:
     branches:
-      - main # Replace with your deployment branch
+      - master # Replace with your deployment branch
 
 jobs:
 
