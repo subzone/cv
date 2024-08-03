@@ -4,7 +4,7 @@ const Experience = () => {
     return (
         <div><br /><br />
             <h1>Professional Experience</h1>
-            <p><h2>Current Position:</h2> <h2>Head of Technology - Senior DevOps Engineer</h2></p>
+            <p><h2>Current Position:</h2> <h2>Head of Cloud Engineering</h2></p>
             <p>Company: <a href="https://htecgroup.com" target="_blank">High Tech Engeneering Center Belgrade</a></p>
             <p>Date Started: <button class="button-12" role="button">01.07.2022</button></p>
             <p>Position Summary:</p>
