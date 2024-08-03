@@ -27,6 +27,7 @@ jobs:
         aws-access-key-id: '${{ secrets.AWS_ACCESS_KEY_ID }}'
         aws-secret-access-key: '${{ secrets.AWS_SECRET_ACCESS_KEY }}'
         aws-region: eu-south-1 # Replace with your desired AWS region
+        role-to-assume: arn:aws:iam::730335451730:role/GH-action-access
 
     - name: Install Node.js
       uses: actions/setup-node@v3
