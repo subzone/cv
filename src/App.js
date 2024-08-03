@@ -10,6 +10,7 @@ import './dark-theme.css';
 import Footer from './components/Footer';
 import { Helmet } from 'react-helmet';
 import ContactForm from './components/ContactForm';
+import Chatbot from 'react-chatbot-kit';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Link to="/experience" className="nav-link">Experience</Link>
         <Link to="/education" className="nav-link">Education</Link>
         <Link to="/projects" className="nav-link">Projects</Link>
+        <Link to="/chatbot" className="nav-lin">Chatbot</Link>
       </nav>
       <div className='dark-theme'><p></p>
            
@@ -31,6 +33,7 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/skills' element={<Skills />} />
         <Route path='/contact' element={<ContactForm />} />
+        <Route path='/chatbot' element={<Chatbot />} />
       </Routes>
       </div><div className='cv'> <Helmet>
         <html lang="en" />
