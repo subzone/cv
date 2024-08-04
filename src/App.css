@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer .container {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .text-muted {
+  color: #6c757d;
+}
