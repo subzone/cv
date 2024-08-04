@@ -1,10 +1,12 @@
 import React from 'react';
+import '../App.css';
 
 class Projects extends React.Component {
     render() {
         return (
             <div><br /><br />
                 <h1>Most Interesting Projects that I had a part in</h1>
+                <hr className="black-line" />
                 <h2>GreatPlaceToWork</h2>
                 <p>Global employee satisfaction survey and culture management platform.</p>
                 <p>Rebuild entire Infrastructure on Azure from Clickops to IaC, with Terraform as a code base, and Azure Devops as an orchestrator for deployment and infrastructure management.</p>

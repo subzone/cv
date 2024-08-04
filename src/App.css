@@ -89,7 +89,7 @@ body, html {
 .footer hr.red-line {
   color: #FF0000;
   background-color: #FF0000;
-  height: 2px;
+  height: 4px;
   border: none;
 }
 

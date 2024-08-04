@@ -1,9 +1,11 @@
 import React from 'react';
+import '../App.css';
 
 const Experience = () => {
     return (
         <div><br /><br />
             <h1>Professional Experience</h1>
+            <hr className="red-line" />
             <p><h2>Current Position:</h2> <h2>Head of Cloud Engineering</h2></p>
             <p>Company: <a href="https://htecgroup.com" target="_blank">High Tech Engeneering Center Belgrade</a></p>
             <p>Date Started: <button class="button-12" role="button">01.07.2022</button></p>
@@ -16,6 +18,7 @@ const Experience = () => {
                 <li>Technical Interview process support</li>
             </ul></p>
             <h1>Previous positions</h1>
+            <hr className="red-line" />
             <h2>Senior DevOps Engineer - Technology Lead</h2>
             <p>Company: <a href="https://htecgroup.com" target="_blank">High Tech Engeneering Center Belgrade</a></p>
             <p>Date Started: <button class="button-12" role="button">01.09.2020</button> To: <button class="button-12" role="button">01.07.2022</button></p>
