@@ -99,3 +99,26 @@ body, html {
   height: 0.5px;
   border: none;
 }
+
+.App-header {
+  flex: 1;
+  z-index: 1; /* Ensure header content is above the background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* .print-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.print-button:hover {
+  background-color: #0056b3;
+} */

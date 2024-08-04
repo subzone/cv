@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 import { Helmet } from 'react-helmet';
 import ContactForm from './components/ContactForm';
 import Chatbot from 'react-chatbot-kit';
-
+import ExportCV from './components/ExportCV';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -25,6 +25,7 @@ function App() {
         <Link to="/experience" className="nav-link">Experience</Link>
         <Link to="/education" className="nav-link">Education</Link>
         <Link to="/projects" className="nav-link">Projects</Link>
+        <ExportCV />
         {/* <Link to="/chatbot" className="nav-lin">Chatbot</Link> */}
       </nav>
       <div className='dark-theme'><p></p>

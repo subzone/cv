@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+    const handlePrint = () => {
+        window.print();
+      };
+
     return (
         <div className="navbar">
             <div className="navbar-container">
@@ -13,6 +17,7 @@ const Navbar = () => {
                     <Link to="/education" className="navbar-item">Education</Link>
                     <Link to="/projects" className="navbar-item">Projects</Link>
                     <Link to="/contact" className="navbar-item">ContactForm</Link>
+                   
                 </div>
             </div>
         </div>
