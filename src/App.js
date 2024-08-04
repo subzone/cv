@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
     <BrowserRouter>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div className="no-print"><nav class="navbar navbar-expand-lg navbar-light bg-light">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/about" className="nav-link">About</Link>
         <Link to="/experience" className="nav-link">Experience</Link>
@@ -27,7 +27,7 @@ function App() {
         <Link to="/projects" className="nav-link">Projects</Link>
         <ExportCV />
         {/* <Link to="/chatbot" className="nav-lin">Chatbot</Link> */}
-      </nav>
+      </nav></div>
       <div className='dark-theme'><p></p>
            
       <Routes>
