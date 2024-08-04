@@ -29,10 +29,7 @@ const ContactForm = () => {
             alert('Please fill in all fields.');
         }
     };
-    const isValidEmail = email => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return regex.test(String(email).toLowerCase());
-    };
+    // Remove the declaration of the isValidEmail function
     return (
         <div id="contact-form">
             <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} /><br />
