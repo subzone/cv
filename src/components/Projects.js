@@ -17,7 +17,7 @@ class Projects extends React.Component {
                 <p>In Europe, Cinedavis is a leading provider of solutions for screen advertising and cinema exibition industries.</p>
                 <p>Implemented continuous monitoring and alerting systems in order to reduce downtimes, and create response even before issue occurs.</p>
                 <h2>Primary Health Care Center Digitalization</h2>
-                <p>One of the leading Serbian Health Care providers (7 years in a raw Best in continuous quality improvement)</p>
+                <p>One of the leading Serbian Health Care providers (7 years continuously Best Health Care Center in continuous quality improvement)</p>
                 <p>Implemented EMR/EHR systems, Laboratory IS, PACS, RISC, DICOM, Telemedicine, Certified per ISO 27001 (only PHC in Serbia ever achieved it), and many, many more high end technologies to improve quality for service users.</p>
             </div>
         );
