@@ -17,6 +17,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   return (
+    <div className="App">
     <BrowserRouter>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <Link to="/" className="nav-link">Home</Link>
@@ -38,13 +39,18 @@ function App() {
         <Route path='/contact' element={<ContactForm />} />
         <Route path='/chatbot' element={<Chatbot />} />
       </Routes>
-      </div><div className='cv'> 
+      </div><div className="background"><div className='cv'> 
         <Helmet>
           <html lang="en" />
           <meta name="theme-color" content="#E6E6FA" />
       </Helmet>
-      <Footer /></div>
+      </div></div>
     </BrowserRouter>
+    <footer className="footer">
+    <div className="container"><Footer />
+    </div>
+  </footer>
+  </div>
   );
 }
 

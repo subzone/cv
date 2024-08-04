@@ -6,13 +6,16 @@ const Footer = () => {
 	const year = new Date().getFullYear();
 
 	return (
-		<div className="footer custom-footer"> {/* Add the "custom-footer" class */}
+		<div className="footer "> 
 			<div className="container">			
-				<a href="https://github.com/subzone" target="_blank"><FaGithub /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://www.linkedin.com/in/subzone/" target="_blank"><FaLinkedin /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://twitter.com/milenkom81" target="_blank"><FaTwitter /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://github.com/subzone" target="_blank"><FaGithub /></a>
+				<a href="https://www.linkedin.com/in/subzone/" target="_blank"><FaLinkedin /></a>
+				<a href="https://twitter.com/milenkom81" target="_blank"><FaTwitter /></a>
 				<a href="https://www.facebook.com/subzone" target="_blank"><FaFacebook /></a>
-				<br />
+				<hr className="red-line" />
+			</div>
+		<div className="container">
+			<hr className="red-line" />
 				<p className="text-muted"> {`Copyright © Milenko Mitrovic ${year}.  All rights reserved.`}</p>
 			</div>
 		</div>
