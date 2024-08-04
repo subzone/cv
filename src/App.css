@@ -108,17 +108,30 @@ body, html {
   padding: 20px;
 }
 
-/* .print-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+.red-line {
+  border: 1.5px solid red;
+}
+.gallery {
   margin-top: 20px;
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the gallery */
 }
 
-.print-button:hover {
-  background-color: #0056b3;
-} */
+.gallery-img {
+  width: 200px; /* Set the width of each image */
+  height: 300px; /* Set the height to maintain the aspect ratio */
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  object-fit: scale-down;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
