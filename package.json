@@ -48,7 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react": "^16.0.0",
+    "@testing-library/react": "^16.1.0",
     "csp-html-webpack-plugin": "^5.1.0",
     "customize-cra": "^1.0.0",
     "jest-junit": "^16.0.0",
