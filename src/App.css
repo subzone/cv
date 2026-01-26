@@ -397,6 +397,217 @@ input:focus, textarea:focus {
 
 @media print {
   .no-print { display: none !important; }
-  .section, .card, .timeline-card { box-shadow: none; border-color: #ccc; }
-  body { background: #fff; color: #000; }
+  
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .App {
+    background: #fff !important;
+  }
+
+  .background-gradient {
+    display: none !important;
+  }
+
+  .page-shell {
+    max-width: 100%;
+    padding: 0;
+    gap: 12px;
+    margin: 0;
+  }
+
+  .section {
+    background: #fff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 12px 0 !important;
+    page-break-inside: avoid;
+    margin: 0 0 12px 0 !important;
+  }
+
+  .hero {
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    page-break-after: avoid;
+  }
+
+  .hero-intro h1 {
+    color: #000 !important;
+    font-size: 2rem;
+    margin-bottom: 4px;
+  }
+
+  .hero-intro h2 {
+    color: #333 !important;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .hero-intro p {
+    color: #444 !important;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .hero-portrait img {
+    max-width: 180px;
+    border: 2px solid #ddd !important;
+    box-shadow: none !important;
+  }
+
+  .pill {
+    background: #f0f0f0 !important;
+    border: 1px solid #ccc !important;
+    color: #000 !important;
+    font-size: 0.85rem;
+    padding: 4px 8px;
+  }
+
+  .stat-chips {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .stat-chip {
+    background: #f8f8f8 !important;
+    border: 1px solid #ddd !important;
+    padding: 6px 8px;
+  }
+
+  .stat-chip .label {
+    color: #666 !important;
+    font-size: 0.75rem;
+  }
+
+  .stat-chip .value {
+    color: #000 !important;
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    color: #000 !important;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #06b6d4;
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+  }
+
+  .section-kicker {
+    color: #666 !important;
+    font-size: 0.8rem;
+  }
+
+  .timeline::before {
+    background: #ccc !important;
+  }
+
+  .timeline-dot {
+    background: #06b6d4 !important;
+    box-shadow: none !important;
+  }
+
+  .timeline-card {
+    background: #fff !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    padding: 12px;
+    page-break-inside: avoid;
+  }
+
+  .timeline-title {
+    color: #000 !important;
+    font-size: 1rem;
+  }
+
+  .timeline-meta,
+  .timeline-meta a {
+    color: #555 !important;
+    font-size: 0.85rem;
+  }
+
+  .bullet-list {
+    color: #444 !important;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-top: 8px;
+  }
+
+  .tag {
+    background: #f0f0f0 !important;
+    border: 1px solid #ccc !important;
+    color: #333 !important;
+    font-size: 0.75rem;
+    padding: 3px 6px;
+  }
+
+  .card {
+    background: #fff !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    padding: 12px;
+    page-break-inside: avoid;
+  }
+
+  .card h3 {
+    color: #000 !important;
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .card p {
+    color: #444 !important;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .card:hover {
+    transform: none !important;
+    border-color: #ddd !important;
+  }
+
+  .skill-card .meter {
+    background: #f0f0f0 !important;
+    border: 1px solid #ccc !important;
+    height: 8px;
+  }
+
+  .skill-card .meter-fill {
+    background: #06b6d4 !important;
+  }
+
+  .muted {
+    color: #555 !important;
+  }
+
+  a {
+    color: #06b6d4 !important;
+    text-decoration: underline;
+  }
+
+  .footer {
+    margin-top: 20px;
+    padding: 12px 0;
+    border-top: 1px solid #ddd;
+    color: #666 !important;
+  }
+
+  .hero-actions,
+  .button-primary,
+  .button-secondary,
+  .contact-card,
+  .gallery-grid,
+  .news-grid {
+    display: none !important;
+  }
+
+  @page {
+    margin: 0.5in;
+    size: letter;
+  }
 }
