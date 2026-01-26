@@ -1,87 +1,60 @@
 import React from 'react';
-import StarsRating from '../StarsRating';
 
+const skillGroups = [
+    {
+        title: 'Cloud & Platforms',
+        level: 95,
+        summary: 'Azure, AWS, landing zones, networking, cost awareness',
+        tools: ['Azure', 'AWS', 'Landing Zones', 'VNet/VPC', 'FinOps'],
+    },
+    {
+        title: 'DevOps & GitOps',
+        level: 92,
+        summary: 'IaC, delivery pipelines, GitOps rollouts',
+        tools: ['Terraform', 'Helm', 'Argo CD', 'GitHub Actions', 'Jenkins'],
+    },
+    {
+        title: 'SRE & Observability',
+        level: 88,
+        summary: 'Reliability, monitoring, alerting, performance baselines',
+        tools: ['Prometheus', 'Grafana', 'New Relic', 'ELK', 'SLOs'],
+    },
+    {
+        title: 'Security & Compliance',
+        level: 85,
+        summary: 'ISO 27001, secure SDLC, supply-chain hygiene',
+        tools: ['SAST/DAST', 'SonarQube', 'Coverity', 'Black Duck', 'Xray'],
+    },
+];
 
 const Skills = () => {
     return (
-        <div>
-        <h1>Skills</h1>
-        <table>
-           <tr>
-            <th>
-                Skill
-            </th>
-            <th>
-                Experience
-            </th>
-            </tr> 
-            <tr>
-                <td>
-                    Infrastructure as a Code
-                </td>
-                <td>
-                <StarsRating />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    CICD
-                </td>
-                <td>
-                    <StarsRating />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Compliance (ISO 27001)
-                </td>
-                <td>
-                    <StarsRating />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Monitoring
-                </td>
-                <td>
-                    <StarsRating />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    HA/DR
-                </td>
-                <td>
-                    <StarsRating />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    GitOps
-                </td>
-                <td>
-                    <StarsRating />
-                </td>
-            </tr>
-            <tr>
-                <td>
+        <section className="section" id="skills">
+            <div className="section-header">
+                <div>
+                    <div className="section-kicker">Capabilities</div>
+                    <h2 className="section-title">Core Skills</h2>
+                </div>
+            </div>
 
-                </td>
-                <td>
-                    
-                </td>
-            </tr>
-            <tr>
-                <td>
-
-                </td>
-                <td>
-                    
-                </td>
-            </tr>
-        </table>
-        </div>
+            <div className="skills-grid">
+                {skillGroups.map((group) => (
+                    <div className="card skill-card" key={group.title}>
+                        <h3>{group.title}</h3>
+                        <p className="muted">{group.summary}</p>
+                        <div className="meter" aria-label={`${group.title} proficiency`}>
+                            <div className="meter-fill" style={{ width: `${group.level}%` }} />
+                        </div>
+                        <div className="tag-row">
+                            {group.tools.map((tool) => (
+                                <span className="tag" key={tool}>{tool}</span>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
     );
-}
+};
 
 export default Skills;

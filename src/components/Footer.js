@@ -6,22 +6,15 @@ const Footer = () => {
     const year = new Date().getFullYear();
 
     return (
-        <footer className="footer no-print">
-            <div className="footer-container">               
-				<table className="centered-table">
-						<tr>
-						<a href="https://github.com/subzone"><FaGithub /></a>
-						<a href="https://www.linkedin.com/in/subzone/"><FaLinkedin /></a>
-						<a href="https://twitter.com/milenkom81"><FaTwitter /></a>
-						<a href="https://www.facebook.com/subzone"><FaFacebook /></a>
-						</tr>
-						<tr>
-						<hr className="red-line" />
-						<p className="text-muted">{`Copyright © Milenko Mitrovic ${year}. All rights reserved.`}</p>
-						</tr>
-				</table>
-            </div>
-        </footer>
+			<footer className="footer no-print">
+				<div className="icon-row">
+					<a href="https://github.com/subzone" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+					<a href="https://www.linkedin.com/in/subzone/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+					<a href="https://twitter.com/milenkom81" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+					<a href="https://www.facebook.com/subzone" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+				</div>
+				<div style={{ marginTop: 10 }}>{`© ${year} Milenko Mitrović. All rights reserved.`}</div>
+			</footer>
     );
 }
 

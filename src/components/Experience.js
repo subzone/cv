@@ -1,82 +1,127 @@
 import React from 'react';
 import '../App.css';
 
+const roles = [
+    {
+        title: 'Head of Cloud Engineering',
+        company: 'HTEC Group',
+        link: 'https://htecgroup.com',
+        period: 'Jul 2022 – Present',
+        focus: 'Cloud strategy, platform engineering, DevOps leadership',
+        bullets: [
+            'Lead Cloud Engineering with responsibility for infrastructure architecture, platform reliability, and DevOps capability across teams.',
+            'Drive sales/due-diligence technical support and high-level architecture for new engagements.',
+            'Scale GitOps/Platform patterns and interview/hiring standards across the org.',
+        ],
+        tags: ['Azure', 'AWS', 'GitOps', 'Platform Eng', 'FinOps'],
+    },
+    {
+        title: 'Senior DevOps Engineer · Tech Lead',
+        company: 'HTEC Group',
+        link: 'https://htecgroup.com',
+        period: 'Sep 2020 – Jul 2022',
+        focus: 'IaC, CI/CD, security practices',
+        bullets: [
+            'Built and hardened pipelines (SAST/DAST), infrastructure as code, and release automation across multiple client products.',
+            'Mentored engineers and shaped R&D initiatives on delivery tooling.',
+            'Established GitOps practices with Terraform + Argo CD.',
+        ],
+        tags: ['Terraform', 'Argo CD', 'GitHub Actions', 'SAST/DAST'],
+    },
+    {
+        title: 'DevOps Engineer',
+        company: 'Wolters Kluwer (consulting)',
+        link: 'https://www.wolterskluwer.com',
+        period: 'Aug 2018 – Sep 2020',
+        focus: 'CI/CD platform, observability, IaC',
+        bullets: [
+            'Maintained CloudBees Jenkins Enterprise + Artifactory platform; extended scripted shared libraries.',
+            'Integrated SonarQube, Coverity, Black Duck, and Xray for code and supply-chain assurance.',
+            'Supported Azure infrastructure with Terraform and Chef; implemented logging with ELK/New Relic.',
+        ],
+        tags: ['Jenkins', 'Artifactory', 'SonarQube', 'Terraform', 'Azure'],
+    },
+    {
+        title: 'Linux Administrator',
+        company: 'Intens',
+        link: 'https://intens.rs',
+        period: 'Sep 2017 – Sep 2018',
+        focus: 'Streaming platform reliability',
+        bullets: [
+            'Monitored 300+ Scientific Linux servers for video streaming workloads.',
+            'Implemented Nagios with custom Bash plugins and Grafana visualizations.',
+            'Managed KVM virtualization footprint and capacity.',
+        ],
+        tags: ['Linux', 'Nagios', 'Grafana', 'KVM'],
+    },
+    {
+        title: 'IT Assistant',
+        company: 'Farmina Pet Foods',
+        link: 'https://farmina.com/',
+        period: 'Oct 2016 – Sep 2017',
+        focus: 'Infrastructure & security',
+        bullets: [
+            'Administered HW/SW for 20+ servers and 200+ workstations; supported 100+ users.',
+            'Managed LAN/VPN/security and video surveillance systems.',
+        ],
+        tags: ['Networking', 'Security', 'Support'],
+    },
+    {
+        title: 'System Administrator / IT Engineer',
+        company: 'Primary Health Care Center Inđija',
+        link: 'https://dzindjija.rs',
+        period: 'Sep 2008 – Oct 2016',
+        focus: 'Healthcare IT modernization',
+        bullets: [
+            'Implemented and maintained EHR/EMR, PACS/DICOM, telemedicine, and ISO 27001 controls.',
+            'Managed 20+ servers, 200+ workstations, and security for 350+ users.',
+            'Led ISO 9001/14001/18001 programs and achieved 98%+ excellence in health standards.',
+        ],
+        tags: ['EHR/EMR', 'ISO 27001', 'Security', 'Healthcare IT'],
+    },
+];
+
 const Experience = () => {
     return (
-        <div><br /><br />
-            <h1>Professional Experience</h1>
-            <hr className="red-line" />
-            <p><h2>Current Position:</h2> <h2>Head of Cloud Engineering</h2></p>
-            <p>Company: <a href="https://htecgroup.com" target="_blank">High Tech Engeneering Center Belgrade</a></p>
-            <p>Date Started: <button class="button-12" role="button">01.07.2022</button></p>
-            <p>Position Summary:</p>
-            <p><ul>
-                <li>Tech Excellence Role, Infrastructure Architect Group management, DevOps Team Management</li>
-                <li>Sales support, Due diligance support, High Level Architecture Design support</li>
-                <li>Company wide process management</li>
-                <li>Multiple company wide initiatives enabler</li>
-                <li>Technical Interview process support</li>
-            </ul></p>
-            <h1>Previous positions</h1>
-            <hr className="red-line" />
-            <h2>Senior DevOps Engineer - Technology Lead</h2>
-            <p>Company: <a href="https://htecgroup.com" target="_blank">High Tech Engeneering Center Belgrade</a></p>
-            <p>Date Started: <button class="button-12" role="button">01.09.2020</button> To: <button class="button-12" role="button">01.07.2022</button></p>
-            <p>Position Summary:</p>
-            <p><ul>
-                <li>Implementation, Maintenance, Development, Debugging IaC, CICD, SAST, DAST on several projects.</li>
-                <li>Knowledge sharing initiatives, RnD's</li>
-                <li>Technology advisory, for junior colleagues and other technology verticals</li>
-                <li>IaC, GitOps</li>
-                <li>Technical Interviews</li>
-                </ul></p>
-            <h2>DevOps Engineer</h2>
-            <p>Company: <a href="https://www.wolterskluwer.com" target="_blank">Wolterskluwer(subcontractor)</a></p>
-            <p>Date Started: <button class="button-12" role="button">01.08.2018</button> To: <button class="button-12" role="button">01.09.2020</button></p>
-            <p>Position Summary:</p>
-            <p><ul>
-                <li>Maintenance of CICD platform based on CloudBees Jenkins Enterprise, with Artifactory Management, Static Code Analysis Tools, Deployment tools</li>
-                <li>Maintenance and development - Groovy Shared Library (Scripted) with integration to most of the mayor build and deployment tools</li>
-                <li>Configuration, development for Static Code Analysis tools like SonarQube, Coverity, Black Duck, Xray</li>
-                <li>Support developers for pipeline setup and configuration, debugging</li>
-                <li>Azure Infrastructure maintenance and development, IaC (Terraform) + Configuration Management (CHEF)</li>
-                <li>Monitoring configuration with New Relic, ELK, Azure Log Analytics</li>
-                </ul></p>
-            <h2>Linux Administrator</h2>
-            <p>Company: <a href="https://intens.rs" target="_blank">Intens Novi Sad</a></p>
-            <p>Date Started: <button class="button-12" role="button">01.09.2017</button> To: <button class="button-12" role="button">01.09.2018</button></p>
-            <p>Position Summary:</p>
-            <p><ul>
-                <li>Monitoring complex video streaming system, 300+ Linux Servers(Scientific Linux Distro)</li>
-                <li>Managing Virtual Machines, KVM</li>
-                <li>Implemented Nagios, with custom created BASH plugins</li>
-                <li>With PNP4Nagios, and RRD Tool Implementation connected metrics with Grafana implementation</li>
-                </ul></p>
-            <h2>IT Assistant</h2>
-            <p>Company: <a href="https://farmina.com/"target="_blank">Farmina Pet Foods</a></p>
-            <p>Date Started: <button class="button-12" role="button">01.10.2016</button> To: <button class="button-12" role="button">01.09.2017</button></p>
-            <p>Position Summary:</p>
-            <p><ul>
-                <li>HW & SW Administration for entire branch factory facilities, managing 20+ servers, 200+ workstations, support 100+ users</li>
-                <li>Managing LAN, VPN, Security</li>
-                <li>Managing Video surveilance systems</li>
-                <li>Managing some specific industrial SW & HW, HA WiFi system, DR etc.</li>
-                </ul></p>
-            <h2>System Administrator - IT Engineer</h2>
-            <p>Company: <a href="https://dzindjija.rs" target="_blank">Primary Health Care Center "Dr Milorad-Mika Pavlović" Inđija</a></p>
-            <p>Date Started: <button class="button-12" role="button">01.09.2008</button> To: <button class="button-12" role="button">01.10.2016</button></p>
-            <p>Position Summary:</p>
-            <p><ul>
-                <li>HW & SW Administration for entire company, managing 20+ servers, 200+ workstations, support 350+ users</li>
-                <li>Managing LAN, VPN, Security</li>
-                <li>Implemented ISO 9001, 14001, 18001, 27001</li>
-                <li>EHR/EMR Pioneer in Serbian Health Care, Telemedicine, Dicom, PACS, RISC</li>
-                <li>Assisting in one of the first Health Standards implementations with 98.18% Excellence</li>
-                <li>Web Design, Development, RnD and many many more.</li>
-                </ul></p>
-          
-        </div>
+        <section className="section" id="experience">
+            <div className="section-header">
+                <div>
+                    <div className="section-kicker">Roles & Impact</div>
+                    <h2 className="section-title">Professional Experience</h2>
+                </div>
+                <div className="pill">Leadership · Delivery · Reliability</div>
+            </div>
+
+            <div className="timeline">
+                {roles.map((role) => (
+                    <div className="timeline-item" key={role.title + role.period}>
+                        <span className="timeline-dot" aria-hidden="true" />
+                        <div className="timeline-card">
+                            <div className="timeline-header">
+                                <div>
+                                    <h3 className="timeline-title">{role.title}</h3>
+                                    <div className="timeline-meta">
+                                        <a href={role.link} target="_blank" rel="noopener noreferrer">{role.company}</a> · {role.period}
+                                    </div>
+                                    <div className="muted">{role.focus}</div>
+                                </div>
+                            </div>
+                            <ul className="bullet-list">
+                                {role.bullets.map((item) => (
+                                    <li key={item}>{item}</li>
+                                ))}
+                            </ul>
+                            <div className="tag-row">
+                                {role.tags.map((tag) => (
+                                    <span className="tag" key={tag}>{tag}</span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
     );
-}
+};
 
 export default Experience;

@@ -1,19 +1,48 @@
 import React from 'react';
 
-class Education extends React.Component {
-    render() {
-        return (
-            <div><br /><br />
-                <h1>Education</h1>
-                <p>Highest national degree lvl: VI degree,  IT Engineer</p>
-                <p>VTS Doboj, Doboj, BiH</p>
-                <p>Aquired: 24.12.2004</p>
-                <h1>Certificates:</h1>
-                <p>Internal Auditor Certificates: ISO 9001, ISO 14001, ISO 17025, ISO 18001(OHSAS) and ISO 27001</p>
-                <p> High Performance Team Coach from <a href="https://www.linkedin.com/company/atria-group-see/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_details_all%3B26wjvbqXTgCzJLr1ppwmvw%3D%3D">Atria Group International</a></p>
+const Education = () => {
+    return (
+        <section className="section" id="education">
+            <div className="section-header">
+                <div>
+                    <div className="section-kicker">Education & Certifications</div>
+                    <h2 className="section-title">Formal Education</h2>
+                </div>
             </div>
-        );
-    }
-}
+
+            <div className="card-grid">
+                <div className="card">
+                    <h3>IT Engineer · VI degree</h3>
+                    <p className="muted">VTS Doboj, Doboj, BiH — 24.12.2004</p>
+                    <div className="tag-row">
+                        <span className="tag">Information Technology</span>
+                        <span className="tag">Engineering</span>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <h3>Internal Auditor Certifications</h3>
+                    <p className="muted">ISO 9001, ISO 14001, ISO 17025, ISO 18001 (OHSAS), ISO 27001</p>
+                    <div className="tag-row">
+                        <span className="tag">Quality</span>
+                        <span className="tag">Security</span>
+                        <span className="tag">Compliance</span>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <h3>High Performance Team Coach</h3>
+                    <p className="muted">
+                        Certified by <a href="https://www.linkedin.com/company/atria-group-see/" target="_blank" rel="noopener noreferrer">Atria Group International</a>
+                    </p>
+                    <div className="tag-row">
+                        <span className="tag">Leadership</span>
+                        <span className="tag">Coaching</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
 
 export default Education;

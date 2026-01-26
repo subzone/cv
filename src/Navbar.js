@@ -1,27 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import ExportCV from './components/ExportCV';
 import './Navbar.css';
 
 const Navbar = () => {
-    const handlePrint = () => {
-        window.print();
-      };
+  return (
+    <header className="nav-shell no-print">
+      <nav className="nav-bar">
+        <Link to="/" className="brand">
+          Milenko Mitrovic
+        </Link>
 
-    return (
-        <div className="navbar">
-            <div className="navbar-container">
-                <Link to="/" className="navbar-logo">Home</Link>
-                <div className="App-header">
-                    <Link to="/about" className="navbar-item">About</Link>
-                    <Link to="/experience" className="navbar-item">Experience</Link>
-                    <Link to="/education" className="navbar-item">Education</Link>
-                    <Link to="/projects" className="navbar-item">Projects</Link>
-                    <Link to="/contact" className="navbar-item">ContactForm</Link>
-                   
-                </div>
-            </div>
+        <div className="nav-links">
+          <NavLink to="/about" className="nav-link">About</NavLink>
+          <NavLink to="/experience" className="nav-link">Experience</NavLink>
+          <NavLink to="/education" className="nav-link">Education</NavLink>
+          <NavLink to="/skills" className="nav-link">Skills</NavLink>
+          <NavLink to="/projects" className="nav-link">Projects</NavLink>
+          <NavLink to="/contact" className="nav-link">Contact</NavLink>
         </div>
-    );
+
+        <div className="nav-actions">
+          <Link to="/contact" className="ghost-button">Get in touch</Link>
+          <ExportCV />
+        </div>
+      </nav>
+    </header>
+  );
 };
 
 export default Navbar;

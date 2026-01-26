@@ -1,54 +1,69 @@
 import React from "react";
-import Slider from "react-slick";
 import "../App.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
+const updates = [
+    {
+        title: 'Hosting migration',
+        detail: 'Moved static hosting from Azure Storage to AWS CloudFront for fun and learning.',
+        link: null,
+    },
+    {
+        title: 'Azure DevOps extension',
+        detail: 'Built Terraform Drift extension in two coffee breaks; open for contributions.',
+        link: 'https://marketplace.visualstudio.com/items?itemName=subzone.terraform-drift',
+    },
+    {
+        title: 'Speaking',
+        detail: 'Planned session at CodeCamp Festival 2024.',
+        link: 'https://codecamp.ro/codecamp-festival-2024/',
+    },
+    {
+        title: 'Recharge',
+        detail: 'Carved out time to recharge — see the gallery below.',
+        link: null,
+    },
+];
+
+const gallery = [
+    '/images/pic4.jpg',
+    '/images/pic5.jpg',
+    '/images/pic6.jpg',
+    '/images/pic1.jpg',
+    '/images/pic2.jpg',
+];
 
 const WhatsNew = () => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-    };
-
     return (
-        <div className ="no-print">
-            <br /><br />
-            <h1>What is New</h1>
-            <hr className="red-line" />
-            <p><h2>Migrated hosting</h2></p>
-            <p>
-                <ul>
-                    <li>From Azure Storage account moved to AWS Cloud Front because "I can"</li>
-                    <li>Played with creating extensions for Azure DevOps. <a href="https://marketplace.visualstudio.com/items?itemName=subzone.terraform-drift">Terraform Drift</a> Do not expect miracles, since this is a piece of code created within two coffee breaks. Who wants to check out more and contribute please try <a href="https://github.com/subzone/TerraformDrifter">GitHub Repository.</a></li>
-                    <li>Planned to present at CodeCamp. <a href="https://codecamp.ro/codecamp-festival-2024/">Event details.</a></li>
-                    <li> Besides other refactoring, migration etc, decided to dedicate some time to my self, and here are some pics to prove it </li>
-                </ul>
-            </p>
-            <h2>Gallery</h2>
-            <Slider {...settings} className="gallery">
+        <section className="section no-print" id="whatsnew">
+            <div className="section-header">
                 <div>
-                    <img src="/images/pic4.jpg" alt="Pic 4" className="gallery-img" />
+                    <div className="section-kicker">Latest</div>
+                    <h2 className="section-title">What’s New</h2>
                 </div>
-                <div>
-                    <img src="/images/pic5.jpg" alt="Pic 5" className="gallery-img" />
-                </div>
-                <div>
-                    <img src="/images/pic6.jpg" alt="Pic 6" className="gallery-img" />
-                </div>
-                <div>
-                    <img src="/images/pic1.jpg" alt="Pic 1" className="gallery-img" />
-                </div>
-                <div>
-                    <img src="/images/pic2.jpg" alt="Pic 2" className="gallery-img" />
-                </div>
-            </Slider>
-        </div>
+            </div>
+
+            <div className="news-grid">
+                {updates.map((item) => (
+                    <div className="card" key={item.title}>
+                        <h3>{item.title}</h3>
+                        <p className="muted">{item.detail}</p>
+                        {item.link && (
+                            <a href={item.link} target="_blank" rel="noopener noreferrer" className="button-secondary" style={{ padding: '8px 12px', display: 'inline-flex' }}>
+                                Learn more
+                            </a>
+                        )}
+                    </div>
+                ))}
+            </div>
+
+            <h3 style={{ marginTop: '12px', color: 'var(--text-strong)' }}>Gallery</h3>
+            <div className="gallery-grid">
+                {gallery.map((src) => (
+                    <img src={src} alt="Gallery" key={src} loading="lazy" />
+                ))}
+            </div>
+        </section>
     );
-}
+};
 
 export default WhatsNew;
