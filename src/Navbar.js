@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import ExportCV from './components/ExportCV';
+import ThemeSwitcher from './components/ThemeSwitcher';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -23,6 +24,7 @@ const Navbar = () => {
         </div>
 
         <div className="nav-actions">
+          <ThemeSwitcher />
           <Link to="/contact" className="ghost-button">Get in touch</Link>
           <ExportCV />
         </div>

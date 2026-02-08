@@ -1,0 +1,146 @@
+/* Dark Theme (Default) */
+:root,
+[data-theme="dark"] {
+  --bg: #0a1628;
+  --surface: #0f1b2e;
+  --surface-strong: #142338;
+  --card: #162a42;
+  --card-strong: #1d3454;
+  --border-subtle: #334e68;
+  --border-strong: #3d5a7a;
+  --accent: #0ea5e9;
+  --accent-strong: #22d3ee;
+  --accent-faint: rgba(14, 165, 233, 0.2);
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-strong: #f8fafc;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --shadow-soft: 0 10px 40px rgba(3, 7, 18, 0.5);
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --container: 1280px;
+  --section-gap: 72px;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ocean Theme */
+[data-theme="ocean"] {
+  --bg: #0d1f2d;
+  --surface: #122a3a;
+  --surface-strong: #173d52;
+  --card: #1a4d68;
+  --card-strong: #1f5a7d;
+  --border-subtle: #2a5a7a;
+  --border-strong: #3d7a9a;
+  --accent: #00d4ff;
+  --accent-strong: #1de9ff;
+  --accent-faint: rgba(0, 212, 255, 0.2);
+  --text: #d6e8f0;
+  --text-muted: #8ba5b8;
+  --text-strong: #f0f7ff;
+  --success: #1ecc71;
+  --warning: #f39c12;
+  --danger: #e74c3c;
+  --shadow-soft: 0 10px 40px rgba(0, 20, 40, 0.6);
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --container: 1280px;
+  --section-gap: 72px;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --bg: #f8fafc;
+  --surface: #f1f5f9;
+  --surface-strong: #e2e8f0;
+  --card: #e8f0f7;
+  --card-strong: #dde8f0;
+  --border-subtle: #cbd5e1;
+  --border-strong: #94a3b8;
+  --accent: #0ea5e9;
+  --accent-strong: #0284c7;
+  --accent-faint: rgba(14, 165, 233, 0.1);
+  --text: #1e293b;
+  --text-muted: #475569;
+  --text-strong: #0f172a;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.08);
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --container: 1280px;
+  --section-gap: 72px;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Theme-aware background gradients */
+[data-theme="dark"] .background-gradient {
+  background: 
+    radial-gradient(circle at 20% 10%, rgba(6, 182, 212, 0.15), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(14, 165, 233, 0.12), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(16, 185, 129, 0.08), transparent 45%),
+    linear-gradient(135deg, #0a1628 0%, #0d1a2d 40%, #0f1b2e 70%, #0a1628 100%);
+}
+
+[data-theme="ocean"] .background-gradient {
+  background: 
+    radial-gradient(circle at 20% 10%, rgba(0, 212, 255, 0.2), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(0, 150, 200, 0.15), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(0, 100, 150, 0.1), transparent 45%),
+    linear-gradient(135deg, #0d1f2d 0%, #122a3a 40%, #1a4d68 70%, #0d1f2d 100%);
+}
+
+[data-theme="light"] .background-gradient {
+  background: 
+    radial-gradient(circle at 20% 10%, rgba(14, 165, 233, 0.1), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(59, 130, 246, 0.08), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(34, 197, 94, 0.05), transparent 45%),
+    linear-gradient(135deg, #f8fafc 0%, #f1f5f9 40%, #e8f0f7 70%, #f8fafc 100%);
+}
+
+/* Navbar theme-specific styling */
+[data-theme="dark"] .nav-shell {
+  background: rgba(10, 22, 40, 0.85);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="ocean"] .nav-shell {
+  background: rgba(13, 31, 45, 0.85);
+  border-bottom-color: rgba(0, 212, 255, 0.1);
+}
+
+[data-theme="light"] .nav-shell {
+  background: rgba(248, 250, 252, 0.95);
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Card hover effects by theme */
+[data-theme="ocean"] .card:hover {
+  border-color: rgba(0, 212, 255, 0.5);
+}
+
+[data-theme="light"] .card {
+  background: linear-gradient(160deg, #e8f0f7 0%, #dde8f0 100%);
+}
+
+[data-theme="light"] .card:hover {
+  border-color: rgba(14, 165, 233, 0.4);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Button styling by theme */
+[data-theme="ocean"] .button-primary {
+  background: linear-gradient(135deg, #00d4ff, #0096d4);
+}
+
+[data-theme="light"] .button-primary {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: #ffffff;
+}
