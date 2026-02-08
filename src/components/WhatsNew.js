@@ -3,6 +3,21 @@ import "../App.css";
 
 const updates = [
     {
+        title: 'Multi-theme system',
+        detail: 'Implemented three beautiful themes (Dark, Ocean, Light) with persistent selection and redesigned navbar.',
+        link: null,
+    },
+    {
+        title: 'AI Resources section',
+        detail: 'Curated collection of coding assistant repositories and AI development tools.',
+        link: '/ai-resources',
+    },
+    {
+        title: 'Videos page',
+        detail: 'Added YouTube channel integration showcasing tech talks and presentations.',
+        link: '/videos',
+    },
+    {
         title: 'Hosting migration',
         detail: 'Moved static hosting from Azure Storage to AWS CloudFront for fun and learning.',
         link: null,
@@ -11,16 +26,6 @@ const updates = [
         title: 'Azure DevOps extension',
         detail: 'Built Terraform Drift extension in two coffee breaks; open for contributions.',
         link: 'https://marketplace.visualstudio.com/items?itemName=subzone.terraform-drift',
-    },
-    {
-        title: 'Speaking',
-        detail: 'Planned session at CodeCamp Festival 2024.',
-        link: 'https://codecamp.ro/codecamp-festival-2024/',
-    },
-    {
-        title: 'Recharge',
-        detail: 'Carved out time to recharge — see the gallery below.',
-        link: null,
     },
 ];
 
