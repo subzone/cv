@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import ContactForm from './components/ContactForm';
 import Chatbot from './components/Chatbot';
 import Videos from './components/Videos';
+import AIResources from './components/AIResources';
 
 export const routes = [
     { path: '/', element: <Home /> },
@@ -17,6 +18,7 @@ export const routes = [
     { path: '/projects', element: <Projects /> },
     { path: '/skills', element: <Skills /> },
     { path: '/videos', element: <Videos /> },
+    { path: '/ai-resources', element: <AIResources /> },
     { path: '/contact', element: <ContactForm /> },
     { path: '/chatbot', element: <Chatbot /> },
   ];
