@@ -5,9 +5,12 @@ const cspConfigPolicy = {
     'default-src': "'self'",
     'base-uri': "'self'",
     'object-src': "'self'",
-    'script-src': ["'self'"],
-    'style-src': ["'self'"],
-    'img-src': ["'self'"]
+    'script-src': ["'self'", "https://code.jquery.com", "https://cdn.jsdelivr.net", "https://stackpath.bootstrapcdn.com"],
+    'style-src': ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://stackpath.bootstrapcdn.com"],
+    'font-src': ["'self'", "https://fonts.gstatic.com"],
+    'img-src': ["'self'", "data:", "https:"],
+    'frame-src': ["'self'", "https://www.youtube.com", "https://www.youtube-nocookie.com"],
+    'connect-src': ["'self'", "https://cdn.jsdelivr.net", "https://stackpath.bootstrapcdn.com"]
 };
 
 function addCspHtmlWebpackPlugin(config) {

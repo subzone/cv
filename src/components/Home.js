@@ -12,7 +12,7 @@ function Home() {
         <About />
         <WhatsNew />
         <Experience />
-        <Education />  
+        <Education />
         <Skills />
         <Projects />
       </div>

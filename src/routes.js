@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import ContactForm from './components/ContactForm';
 import Chatbot from './components/Chatbot';
+import Videos from './components/Videos';
 
 export const routes = [
     { path: '/', element: <Home /> },
@@ -15,6 +16,7 @@ export const routes = [
     { path: '/education', element: <Education /> },
     { path: '/projects', element: <Projects /> },
     { path: '/skills', element: <Skills /> },
+    { path: '/videos', element: <Videos /> },
     { path: '/contact', element: <ContactForm /> },
     { path: '/chatbot', element: <Chatbot /> },
   ];

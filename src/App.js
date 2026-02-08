@@ -6,6 +6,7 @@ import Education from './components/Education';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Videos from './components/Videos';
 import './dark-theme.css';
 import Footer from './components/Footer';
 import { Helmet } from 'react-helmet';
@@ -36,6 +37,7 @@ function App() {
             <Route path='/education' element={<Education />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/skills' element={<Skills />} />
+            <Route path='/videos' element={<Videos />} />
             <Route path='/contact' element={<ContactForm />} />
             <Route path='/chatbot' element={<Chatbot />} />
             <Route path='/export' element={<ExportCV />} />
