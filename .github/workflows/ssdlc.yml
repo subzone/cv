@@ -25,8 +25,8 @@ jobs:
         id: security
         uses: subzone/ssdlc-action@v1
         with:
-          ai-api-key: ${{ secrets.GITHUB_TOKEN }}  # placeholder; AI features disabled below
-          ai-provider: openai
+          ai-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+          ai-provider: anthropic
           severity-threshold: high
           fail-on-findings: false       # observe-only while validating the action
           enable-sast: true             # Semgrep
@@ -35,11 +35,11 @@ jobs:
           enable-iac-scan: true         # Checkov (Helm chart)
           enable-container-scan: false  # enable after docker build completes; set image below
           # container-image: ghcr.io/subzone/cv:latest
-          enable-threat-modeling: false # requires AI key — re-enable with ANTHROPIC_API_KEY
-          enable-ai-triage: false       # requires AI key — re-enable with ANTHROPIC_API_KEY
-          enable-ai-fix-suggestions: false
+          enable-threat-modeling: true
+          enable-ai-triage: true
+          enable-ai-fix-suggestions: true
           cloud-provider: azure
-          post-pr-comment: false        # no AI summary without triage
+          post-pr-comment: true
           sarif-upload: true
 
       - name: Security summary
