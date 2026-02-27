@@ -29,6 +29,11 @@ const skillGroups = [
         summary: 'Team leadership, hiring, architecture, stakeholder management',
         tools: ['Team Leadership', 'Hiring', 'Architecture Review', 'Pre-sales', 'Mentoring', 'FinOps'],
     },
+    {
+        title: 'AI Engineering',
+        summary: 'Building with and on AI — agents, platforms, and spec-driven delivery',
+        tools: ['Azure OpenAI', 'Amazon Bedrock', 'Vertex AI', 'Custom AI Agents', 'Spec-Driven Dev', 'Prompt Engineering', 'GitHub Copilot', 'Claude Code', 'Cursor', 'Amazon Q'],
+    },
 ];
 
 const Skills = () => {

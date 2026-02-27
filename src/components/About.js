@@ -13,8 +13,9 @@ const About = () => {
         <h2>DevOps, Cloud & Platform Engineering Leader</h2>
         <p className="muted">
           16+ years architecting resilient platforms across Azure and AWS. I lead teams, design pragmatic delivery pipelines,
-          and bring Site Reliability and FinOps thinking into everyday engineering so products ship faster and safer.
-          Always happy to talk about interesting infrastructure challenges.
+          and bring Site Reliability, FinOps, and AI engineering thinking into everyday delivery — so products ship faster, safer, and smarter.
+          I build custom AI agents, work across Azure OpenAI, Bedrock, and Vertex AI, and apply spec-driven development to keep AI-assisted engineering auditable.
+          Always happy to talk about infrastructure, AI tooling, or where the two meet.
         </p>
         <div className="hero-actions">
           <Link to="/contact" className="button-primary">Let’s talk</Link>
@@ -31,7 +32,7 @@ const About = () => {
           <div className="stat-chip"><span className="label">Teams led</span><span className="value">5+</span></div>
           <div className="stat-chip"><span className="label">Location</span><span className="value">Serbia · Remote OK</span></div>
           <div className="stat-chip"><span className="label">Clouds</span><span className="value">Azure · AWS</span></div>
-          <div className="stat-chip"><span className="label">Focus</span><span className="value">DevOps · SRE · GitOps</span></div>
+          <div className="stat-chip"><span className="label">Focus</span><span className="value">DevOps · SRE · AI Eng</span></div>
           <div className="stat-chip"><span className="label">Engagement</span><span className="value">Leadership · Advisory</span></div>
         </div>
       </div>

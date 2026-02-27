@@ -30,6 +30,13 @@ const projectData = [
         impact: 'Delivered EMR/EHR, PACS/DICOM, telemedicine, and ISO 27001 certification across the org.',
         tags: ['Healthcare IT', 'ISO 27001', 'Security', 'Telemedicine'],
     },
+    {
+        name: 'AI Agents & Platform Tooling',
+        link: null,
+        summary: 'Custom AI agents, developer tools, and Azure DevOps extensions built on Azure OpenAI, Amazon Bedrock, and Vertex AI.',
+        impact: 'Applied spec-driven development to structure AI-assisted delivery — defining requirements before codegen to maintain quality and auditability. Led org-wide evaluation and adoption of AI coding assistants across engineering teams.',
+        tags: ['Azure OpenAI', 'Bedrock', 'Vertex AI', 'Custom Agents', 'Spec-Driven Dev', 'Azure DevOps'],
+    },
 ];
 
 const Projects = () => {

@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/subzone/cv
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   tag: "latest"
 
 nameOverride: ""

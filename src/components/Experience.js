@@ -13,8 +13,9 @@ const roles = [
             'Drive pre-sales and due-diligence technical support; contribute to high-level architecture proposals for new business engagements.',
             'Scale GitOps and Platform Engineering patterns org-wide; own interviewing and hiring standards for cloud roles.',
             'Led cloud vendor partnership processes with Microsoft, AWS, and GCP over 3 years, contributing to partner-tier advancement.',
+            'Built custom AI agents and developer tooling on Azure OpenAI, Amazon Bedrock, and Vertex AI; led org-wide adoption of AI coding assistants and established spec-driven development practices to keep AI-assisted delivery auditable and secure.',
         ],
-        tags: ['Azure', 'AWS', 'GitOps', 'Platform Eng', 'FinOps', 'Partnerships'],
+        tags: ['Azure', 'AWS', 'GitOps', 'Platform Eng', 'FinOps', 'AI Engineering'],
     },
     {
         title: 'Senior DevOps Engineer · Tech Lead',
