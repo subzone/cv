@@ -1,0 +1,58 @@
+name: AI SSDLC Security
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  security:
+    name: SSDLC Security Scan
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write  # SARIF upload to GitHub Security tab
+      pull-requests: write    # post AI summary as PR comment
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run AI SSDLC Security Suite
+        id: security
+        uses: subzone/ssdlc-action@v1
+        with:
+          ai-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+          ai-provider: anthropic
+          severity-threshold: high
+          fail-on-findings: false       # observe-only while validating the action
+          enable-sast: true             # Semgrep
+          enable-secret-scan: true      # Gitleaks
+          enable-sca: true              # Trivy (npm deps)
+          enable-iac-scan: true         # Checkov (Helm chart)
+          enable-container-scan: false  # enable after docker build completes; set image below
+          # container-image: ghcr.io/subzone/cv:latest
+          enable-threat-modeling: true
+          enable-ai-triage: true
+          enable-ai-fix-suggestions: true
+          cloud-provider: azure
+          post-pr-comment: true
+          sarif-upload: true
+
+      - name: Security summary
+        if: always()
+        run: |
+          echo "### AI SSDLC Scan Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Severity | Count |" >> $GITHUB_STEP_SUMMARY
+          echo "|----------|------:|" >> $GITHUB_STEP_SUMMARY
+          echo "| Critical | ${{ steps.security.outputs.critical-count }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| High     | ${{ steps.security.outputs.high-count }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Medium   | ${{ steps.security.outputs.medium-count }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Low      | ${{ steps.security.outputs.low-count }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Total** | **${{ steps.security.outputs.findings-count }}** |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Gate passed: \`${{ steps.security.outputs.passed }}\`" >> $GITHUB_STEP_SUMMARY
