@@ -1,29 +1,33 @@
-import React from 'react';
-
 const skillGroups = [
     {
         title: 'Cloud & Platforms',
-        level: 95,
         summary: 'Azure, AWS, landing zones, networking, cost awareness',
-        tools: ['Azure', 'AWS', 'Landing Zones', 'VNet/VPC', 'FinOps'],
+        tools: ['Azure', 'AWS', 'Landing Zones', 'VNet/VPC', 'FinOps', 'Azure DevOps'],
     },
     {
         title: 'DevOps & GitOps',
-        level: 92,
         summary: 'IaC, delivery pipelines, GitOps rollouts',
-        tools: ['Terraform', 'Helm', 'Argo CD', 'GitHub Actions', 'Jenkins'],
+        tools: ['Terraform', 'Helm', 'Argo CD', 'GitHub Actions', 'Jenkins', 'Terraform Cloud'],
+    },
+    {
+        title: 'Containers & Orchestration',
+        summary: 'Kubernetes, EKS, AKS, container strategy',
+        tools: ['Kubernetes', 'EKS', 'AKS', 'Docker', 'Helm'],
     },
     {
         title: 'SRE & Observability',
-        level: 88,
         summary: 'Reliability, monitoring, alerting, performance baselines',
-        tools: ['Prometheus', 'Grafana', 'New Relic', 'ELK', 'SLOs'],
+        tools: ['Prometheus', 'Grafana', 'New Relic', 'ELK', 'SLOs', 'Nagios'],
     },
     {
         title: 'Security & Compliance',
-        level: 85,
         summary: 'ISO 27001, secure SDLC, supply-chain hygiene',
-        tools: ['SAST/DAST', 'SonarQube', 'Coverity', 'Black Duck', 'Xray'],
+        tools: ['SAST/DAST', 'SonarQube', 'Coverity', 'Black Duck', 'Xray', 'ISO 27001'],
+    },
+    {
+        title: 'Leadership & Delivery',
+        summary: 'Team leadership, hiring, architecture, stakeholder management',
+        tools: ['Team Leadership', 'Hiring', 'Architecture Review', 'Pre-sales', 'Mentoring', 'FinOps'],
     },
 ];
 
@@ -42,9 +46,6 @@ const Skills = () => {
                     <div className="card skill-card" key={group.title}>
                         <h3>{group.title}</h3>
                         <p className="muted">{group.summary}</p>
-                        <div className="meter" aria-label={`${group.title} proficiency`}>
-                            <div className="meter-fill" style={{ width: `${group.level}%` }} />
-                        </div>
                         <div className="tag-row">
                             {group.tools.map((tool) => (
                                 <span className="tag" key={tool}>{tool}</span>

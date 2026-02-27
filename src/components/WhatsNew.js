@@ -3,29 +3,29 @@ import "../App.css";
 
 const updates = [
     {
-        title: 'Multi-theme system',
-        detail: 'Implemented three beautiful themes (Dark, Ocean, Light) with persistent selection and redesigned navbar.',
-        link: null,
+        title: 'Speaking · Vision Days 2025',
+        detail: 'Spoke at Vision Days IT conference in Mostar — IT Security & DevOps track.',
+        link: 'https://visiondays.ba/',
     },
     {
-        title: 'AI Resources section',
-        detail: 'Curated collection of coding assistant repositories and AI development tools.',
-        link: '/ai-resources',
-    },
-    {
-        title: 'Videos page',
-        detail: 'Added YouTube channel integration showcasing tech talks and presentations.',
-        link: '/videos',
-    },
-    {
-        title: 'Hosting migration',
-        detail: 'Moved static hosting from Azure Storage to AWS CloudFront for fun and learning.',
-        link: null,
+        title: 'Speaking · CodeCamp 2024',
+        detail: 'Spoke at CodeCamp Festival 2024 on DevOps and cloud platform topics.',
+        link: 'https://codecamp.ro/speakers/milenko-mitrovic/',
     },
     {
         title: 'Azure DevOps extension',
-        detail: 'Built Terraform Drift extension in two coffee breaks; open for contributions.',
+        detail: 'Built Terraform Drift Detector extension — published to VS Marketplace, open for contributions.',
         link: 'https://marketplace.visualstudio.com/items?itemName=subzone.terraform-drift',
+    },
+    {
+        title: 'Multi-theme system',
+        detail: 'Implemented three themes (Dark, Ocean, Light) with persistent selection and redesigned navbar.',
+        link: null,
+    },
+    {
+        title: 'Multi-cloud hosting',
+        detail: 'Migrated CV hosting from Azure Storage to AWS CloudFront — dogfooding multi-cloud.',
+        link: null,
     },
 ];
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import me from '../me.jpg';
 import '../App.css';
 
@@ -13,16 +14,25 @@ const About = () => {
         <p className="muted">
           16+ years architecting resilient platforms across Azure and AWS. I lead teams, design pragmatic delivery pipelines,
           and bring Site Reliability and FinOps thinking into everyday engineering so products ship faster and safer.
+          Always happy to talk about interesting infrastructure challenges.
         </p>
         <div className="hero-actions">
           <Link to="/contact" className="button-primary">Let’s talk</Link>
+          <a href="https://www.linkedin.com/in/subzone/" target="_blank" rel="noopener noreferrer" className="button-primary" style={{ background: "linear-gradient(135deg, #0077b5, #005983)", borderColor: "#005983" }}>
+            <FaLinkedin /> LinkedIn
+          </a>
+          <a href="https://github.com/subzone" target="_blank" rel="noopener noreferrer" className="button-secondary">
+            <FaGithub /> GitHub
+          </a>
           <Link to="/export" className="button-secondary">Download CV</Link>
         </div>
         <div className="stat-chips">
           <div className="stat-chip"><span className="label">Years in IT</span><span className="value">16+</span></div>
           <div className="stat-chip"><span className="label">Teams led</span><span className="value">5+</span></div>
+          <div className="stat-chip"><span className="label">Location</span><span className="value">Serbia · Remote OK</span></div>
           <div className="stat-chip"><span className="label">Clouds</span><span className="value">Azure · AWS</span></div>
           <div className="stat-chip"><span className="label">Focus</span><span className="value">DevOps · SRE · GitOps</span></div>
+          <div className="stat-chip"><span className="label">Engagement</span><span className="value">Leadership · Advisory</span></div>
         </div>
       </div>
 

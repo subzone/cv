@@ -144,3 +144,58 @@
   background: linear-gradient(135deg, #0ea5e9, #0284c7);
   color: #ffffff;
 }
+
+[data-theme="light"] .button-secondary {
+  background: rgba(226, 232, 240, 0.9);
+  border-color: rgba(0, 0, 0, 0.15);
+  color: #1e293b;
+}
+
+[data-theme="light"] .button-secondary:hover {
+  background: rgba(203, 213, 225, 0.95);
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Stat chips in light theme */
+[data-theme="light"] .stat-chip {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(241, 245, 249, 0.95));
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .stat-chip .label {
+  color: #64748b;
+}
+
+/* Tags in light theme */
+[data-theme="light"] .tag {
+  background: rgba(226, 232, 240, 0.9);
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #334155;
+}
+
+[data-theme="light"] .tag:hover {
+  background: rgba(203, 213, 225, 0.95);
+  color: #0f172a;
+}
+
+/* Portrait border in light theme */
+[data-theme="light"] .hero-portrait img {
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* Section top highlight line in light theme */
+[data-theme="light"] .section::before {
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.06), transparent);
+}
+
+/* Section header separator in light theme */
+[data-theme="light"] .section-header {
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Footer border in light theme */
+[data-theme="light"] .footer {
+  border-top-color: rgba(0, 0, 0, 0.08);
+}

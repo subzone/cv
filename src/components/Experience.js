@@ -9,11 +9,12 @@ const roles = [
         period: 'Jul 2022 – Present',
         focus: 'Cloud strategy, platform engineering, DevOps leadership',
         bullets: [
-            'Lead Cloud Engineering with responsibility for infrastructure architecture, platform reliability, and DevOps capability across teams.',
-            'Drive sales/due-diligence technical support and high-level architecture for new engagements.',
-            'Scale GitOps/Platform patterns and interview/hiring standards across the org.',
+            'Lead cloud engineering teams of 2–7 engineers, owning infrastructure architecture, platform reliability, and DevOps capability across concurrent client engagements.',
+            'Drive pre-sales and due-diligence technical support; contribute to high-level architecture proposals for new business engagements.',
+            'Scale GitOps and Platform Engineering patterns org-wide; own interviewing and hiring standards for cloud roles.',
+            'Led cloud vendor partnership processes with Microsoft, AWS, and GCP over 3 years, contributing to partner-tier advancement.',
         ],
-        tags: ['Azure', 'AWS', 'GitOps', 'Platform Eng', 'FinOps'],
+        tags: ['Azure', 'AWS', 'GitOps', 'Platform Eng', 'FinOps', 'Partnerships'],
     },
     {
         title: 'Senior DevOps Engineer · Tech Lead',
