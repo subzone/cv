@@ -3,13 +3,14 @@ name: Deploy to CloudFront
 on:
   push:
     branches:
-      - master # Replace with your deployment branch
+      - master
+  workflow_dispatch:  # allows manual trigger from GitHub Actions UI
 
 
 jobs:
 
   deploy:
-    if: false # temporarily disabled - using k8s as dev environment
+    if: github.event_name == 'workflow_dispatch'  # only runs when manually triggered, not on push
     environment: live
     runs-on: ubuntu-latest
     
