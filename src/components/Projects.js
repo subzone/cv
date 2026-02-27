@@ -31,11 +31,11 @@ const projectData = [
         tags: ['Healthcare IT', 'ISO 27001', 'Security', 'Telemedicine'],
     },
     {
-        name: 'AI Agents & Platform Tooling',
-        link: null,
-        summary: 'Custom AI agents, developer tools, and Azure DevOps extensions built on Azure OpenAI, Amazon Bedrock, and Vertex AI.',
-        impact: 'Applied spec-driven development to structure AI-assisted delivery — defining requirements before codegen to maintain quality and auditability. Led org-wide evaluation and adoption of AI coding assistants across engineering teams.',
-        tags: ['Azure OpenAI', 'Bedrock', 'Vertex AI', 'Custom Agents', 'Spec-Driven Dev', 'Azure DevOps'],
+        name: 'AI SSDLC Security Suite',
+        link: 'https://github.com/marketplace/actions/ai-ssdlc-security-suite',
+        summary: 'Published GitHub Action combining SAST (Semgrep), secret detection (Gitleaks), SCA (Trivy), IaC scanning (Checkov), STRIDE threat modeling, and AI-powered triage — one step replacing five separate tool integrations.',
+        impact: 'AI triage reduces alert noise and generates contextual fix suggestions per finding. Built on Anthropic and OpenAI APIs. Currently running in this CV\'s own CI pipeline.',
+        tags: ['GitHub Marketplace', 'SAST', 'STRIDE', 'AI Triage', 'Semgrep', 'Trivy', 'Checkov', 'Open Source'],
     },
 ];
 

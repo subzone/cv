@@ -13,6 +13,11 @@ const updates = [
         link: 'https://codecamp.ro/speakers/milenko-mitrovic/',
     },
     {
+        title: 'GitHub Action · AI SSDLC Security Suite',
+        detail: 'Published AI-powered SSDLC action to GitHub Marketplace — SAST, secret detection, SCA, IaC, AI triage, and STRIDE threat modeling in a single pipeline step.',
+        link: 'https://github.com/marketplace/actions/ai-ssdlc-security-suite',
+    },
+    {
         title: 'Azure DevOps extension',
         detail: 'Built Terraform Drift Detector extension — published to VS Marketplace, open for contributions.',
         link: 'https://marketplace.visualstudio.com/items?itemName=subzone.terraform-drift',
