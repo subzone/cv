@@ -5,7 +5,12 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
       interval: "weekly"
+    ignore:
+      # Managed via package.json overrides — Dependabot cannot resolve these
+      # without conflicting with our pinned versions
+      - dependency-name: "nth-check"
+      - dependency-name: "postcss"
