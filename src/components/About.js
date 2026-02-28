@@ -18,7 +18,6 @@ const About = () => {
           Always happy to talk about infrastructure, AI tooling, or where the two meet.
         </p>
         <div className="hero-actions">
-          <Link to="/contact" className="button-primary">Let’s talk</Link>
           <a href="https://www.linkedin.com/in/subzone/" target="_blank" rel="noopener noreferrer" className="button-primary" style={{ background: "linear-gradient(135deg, #0077b5, #005983)", borderColor: "#005983" }}>
             <FaLinkedin /> LinkedIn
           </a>
