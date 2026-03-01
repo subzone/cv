@@ -26,7 +26,6 @@ const Navbar = () => {
 
         <div className="nav-actions">
           <ThemeSwitcher />
-          <Link to="/contact" className="ghost-button">Get in touch</Link>
           <ExportCV />
         </div>
       </nav>
