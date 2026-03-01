@@ -23,7 +23,7 @@ jobs:
 
       - name: Run AI SSDLC Security Suite
         id: security
-        uses: subzone/ssdlc-action@v1
+        uses: subzone/ssdlc-action@main
         with:
           license-key: ${{ secrets.SSDLC_LICENSE_KEY }}
           ai-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
