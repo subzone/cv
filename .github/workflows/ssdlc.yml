@@ -25,6 +25,7 @@ jobs:
         id: security
         uses: subzone/ssdlc-action@v1
         with:
+          license-key: ${{ secrets.SSDLC_LICENSE_KEY }}
           ai-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
           ai-provider: anthropic
           severity-threshold: high
