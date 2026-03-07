@@ -26,8 +26,9 @@ jobs:
         uses: subzone/ssdlc-action@main
         with:
           license-key: ${{ secrets.SSDLC_LICENSE_KEY }}
-          ai-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
-          ai-provider: anthropic
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          ai-provider: github
+          ai-model: gpt-4o-mini
           severity-threshold: high
           fail-on-findings: false       # observe-only while validating the action
           enable-sast: true             # Semgrep
