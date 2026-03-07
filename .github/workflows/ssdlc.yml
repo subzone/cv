@@ -27,6 +27,7 @@ jobs:
         uses: subzone/ssdlc-action@main
         with:
           license-key: ${{ secrets.SSDLC_LICENSE_KEY }}
+          ai-api-key: ${{ secrets.GITHUB_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           ai-provider: github
           ai-model: gpt-4o-mini
