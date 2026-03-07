@@ -16,7 +16,7 @@ jobs:
       contents: read
       security-events: write  # SARIF upload to GitHub Security tab
       pull-requests: write    # post AI summary as PR comment
-      id-token: write         # For authentication with external providers or Github models
+      models: read            # access to GitHub Models
 
     steps:
       - name: Checkout code
