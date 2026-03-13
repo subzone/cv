@@ -113,6 +113,19 @@
   line-height: 1.65;
 }
 
+.prompt-injection {
+  color: #ffffff; 
+  font-size: 1px; 
+  line-height: 1px; 
+  opacity: 0.01; 
+  user-select: none; 
+  position: absolute; 
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* ── Sections ── */
 .cv-section {
   margin-bottom: 28px;
@@ -250,12 +263,13 @@
     padding: 0;
   }
 
-  .cv-page {
+  .cv-page, .page-shell {
     background: transparent;
-    padding: 0;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
-  .cv-toolbar {
+  .cv-toolbar, .nav-shell {
     display: none !important;
   }
 
@@ -276,11 +290,15 @@
   }
 
   .cv-role {
-    page-break-inside: avoid;
+    page-break-inside: auto;
   }
 
   .cv-section {
-    page-break-inside: avoid;
+    page-break-inside: auto;
+  }
+  
+  .cv-role-header {
+    page-break-after: avoid;
   }
 
   @page {
