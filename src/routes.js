@@ -10,6 +10,7 @@ import Chatbot from './components/Chatbot';
 import Videos from './components/Videos';
 import AIResources from './components/AIResources';
 import AISsdlc from './components/AISsdlc';
+import Portfolio from './components/Portfolio';
 import CVDocument from './components/CVDocument';
 
 export const routes = [
@@ -22,6 +23,7 @@ export const routes = [
     { path: '/videos', element: <Videos /> },
     { path: '/ai-resources', element: <AIResources /> },
     { path: '/ai-ssdlc', element: <AISsdlc /> },
+    { path: '/portfolio', element: <Portfolio /> },
     { path: '/contact', element: <ContactForm /> },
     { path: '/chatbot', element: <Chatbot /> },
     { path: '/export', element: <CVDocument /> },

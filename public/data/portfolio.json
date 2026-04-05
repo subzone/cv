@@ -1,0 +1,11 @@
+{
+  "portfolio": [
+    {
+      "name": "ADO Terraform Agent",
+      "description": "Azure DevOps extension that provisions self-hosted pipeline agents with Terraform pre-installed, enabling seamless IaC workflows directly within ADO pipelines.",
+      "marketplace": "https://marketplace.visualstudio.com/items?itemName=subzone.ado-tf-agent",
+      "github": "https://github.com/subzone/ado-tf-agent",
+      "tags": ["Azure DevOps", "Terraform", "IaC", "CI/CD", "Extension"]
+    }
+  ]
+}
