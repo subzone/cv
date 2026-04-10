@@ -3,6 +3,21 @@ import "../App.css";
 
 const updates = [
     {
+        title: 'Azure DevOps · ADO Terraform Agent',
+        detail: 'Extension that provisions self-hosted pipeline agents with Terraform pre-installed, enabling seamless IaC workflows directly within ADO pipelines.',
+        link: 'https://marketplace.visualstudio.com/items?itemName=subzone.ado-tf-agent',
+    },
+    {
+        title: 'Azure DevOps · AI PR Reviewer',
+        detail: 'Pipeline task that uses Claude AI to automatically review pull requests. Supports GitHub, GitLab, Bitbucket, and multiple AI backends (Anthropic, Azure AI Foundry, AWS Bedrock, Vertex AI).',
+        link: 'https://marketplace.visualstudio.com/items?itemName=subzone.ad-ai-pr-reviewer',
+    },
+    {
+        title: 'Azure DevOps · Terraform Drift',
+        detail: 'Pipeline task that detects infrastructure drift between Terraform config and live state. Supports auto-reconciliation, manual approval workflows, Terraform and OpenTofu across Azure, AWS, and GCP.',
+        link: 'https://marketplace.visualstudio.com/items?itemName=subzone.terraform-drift',
+    },
+    {
         title: 'Speaking · Vision Days 2025',
         detail: 'Spoke at Vision Days IT conference in Mostar — IT Security & DevOps track.',
         link: 'https://visiondays.ba/',
@@ -16,11 +31,6 @@ const updates = [
         title: 'GitHub Action · AI SSDLC Security Suite',
         detail: 'Published AI-powered SSDLC action to GitHub Marketplace — SAST, secret detection, SCA, IaC, AI triage, and STRIDE threat modeling in a single pipeline step.',
         link: 'https://github.com/marketplace/actions/ai-ssdlc-security-suite',
-    },
-    {
-        title: 'Azure DevOps extension',
-        detail: 'Built Terraform Drift Detector extension — published to VS Marketplace, open for contributions.',
-        link: 'https://marketplace.visualstudio.com/items?itemName=subzone.terraform-drift',
     },
     {
         title: 'Multi-theme system',

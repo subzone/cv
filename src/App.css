@@ -1096,6 +1096,114 @@ input:focus, textarea:focus {
   }
 }
 
+/* ─── Matrix / Console cards (What's New + Education) ───────────── */
+.news-grid .card,
+#education .card {
+  background: #020c02;
+  border: 1px solid #00b33c;
+  color: #00ff41;
+  font-family: var(--font-mono);
+  position: relative;
+}
+
+/* Scanline overlay */
+.news-grid .card::after,
+#education .card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0, 255, 65, 0.018) 3px,
+    rgba(0, 255, 65, 0.018) 4px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.news-grid .card > *,
+#education .card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.news-grid .card h3,
+#education .card h3 {
+  color: #00ff41;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 0.95rem;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.news-grid .card h3::before,
+#education .card h3::before {
+  content: '> ';
+  opacity: 0.5;
+}
+
+.news-grid .card p,
+.news-grid .card .muted,
+#education .card p,
+#education .card .muted {
+  color: #00883a !important;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.news-grid .card .tag,
+#education .card .tag {
+  border-color: #00883a;
+  color: #00ff41;
+  font-family: var(--font-mono);
+  background: rgba(0, 255, 65, 0.06);
+}
+
+.news-grid .card .button-secondary,
+#education .card .button-secondary {
+  border-color: #00883a;
+  color: #00ff41;
+  background: transparent;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+}
+
+.news-grid .card .button-secondary:hover,
+#education .card .button-secondary:hover {
+  background: rgba(0, 255, 65, 0.1);
+  border-color: #00ff41;
+  color: #00ff41;
+}
+
+/* Override the standard invert-hover for these cards */
+.news-grid .card:hover,
+#education .card:hover {
+  background: #020c02;
+  border-color: #00ff41;
+  box-shadow: 0 0 24px rgba(0, 255, 65, 0.12), inset 0 0 24px rgba(0, 255, 65, 0.04);
+}
+
+.news-grid .card:hover h3,
+.news-grid .card:hover p,
+.news-grid .card:hover .muted,
+.news-grid .card:hover .tag,
+.news-grid .card:hover a,
+#education .card:hover h3,
+#education .card:hover p,
+#education .card:hover .muted,
+#education .card:hover .tag,
+#education .card:hover a {
+  color: #00ff41 !important;
+  border-color: rgba(0, 255, 65, 0.35) !important;
+  background: transparent !important;
+}
+
 /* ─── Print ──────────────────────────────────────────────────────── */
 @media print {
   .no-print { display: none !important; }
