@@ -1096,9 +1096,11 @@ input:focus, textarea:focus {
   }
 }
 
-/* ─── Matrix / Console cards (What's New + Education) ───────────── */
+/* ─── Matrix / Console cards ─────────────────────────────────────── */
 .news-grid .card,
-#education .card {
+#education .card,
+#projects .card,
+#skills .card {
   background: #020c02;
   border: 1px solid #00b33c;
   color: #00ff41;
@@ -1108,7 +1110,9 @@ input:focus, textarea:focus {
 
 /* Scanline overlay */
 .news-grid .card::after,
-#education .card::after {
+#education .card::after,
+#projects .card::after,
+#skills .card::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -1124,13 +1128,17 @@ input:focus, textarea:focus {
 }
 
 .news-grid .card > *,
-#education .card > * {
+#education .card > *,
+#projects .card > *,
+#skills .card > * {
   position: relative;
   z-index: 1;
 }
 
 .news-grid .card h3,
-#education .card h3 {
+#education .card h3,
+#projects .card h3,
+#skills .card h3 {
   color: #00ff41;
   font-family: var(--font-mono);
   font-weight: 600;
@@ -1141,7 +1149,9 @@ input:focus, textarea:focus {
 }
 
 .news-grid .card h3::before,
-#education .card h3::before {
+#education .card h3::before,
+#projects .card h3::before,
+#skills .card h3::before {
   content: '> ';
   opacity: 0.5;
 }
@@ -1149,7 +1159,11 @@ input:focus, textarea:focus {
 .news-grid .card p,
 .news-grid .card .muted,
 #education .card p,
-#education .card .muted {
+#education .card .muted,
+#projects .card p,
+#projects .card .muted,
+#skills .card p,
+#skills .card .muted {
   color: #00883a !important;
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -1157,7 +1171,9 @@ input:focus, textarea:focus {
 }
 
 .news-grid .card .tag,
-#education .card .tag {
+#education .card .tag,
+#projects .card .tag,
+#skills .card .tag {
   border-color: #00883a;
   color: #00ff41;
   font-family: var(--font-mono);
@@ -1165,7 +1181,9 @@ input:focus, textarea:focus {
 }
 
 .news-grid .card .button-secondary,
-#education .card .button-secondary {
+#education .card .button-secondary,
+#projects .card .button-secondary,
+#skills .card .button-secondary {
   border-color: #00883a;
   color: #00ff41;
   background: transparent;
@@ -1175,7 +1193,9 @@ input:focus, textarea:focus {
 }
 
 .news-grid .card .button-secondary:hover,
-#education .card .button-secondary:hover {
+#education .card .button-secondary:hover,
+#projects .card .button-secondary:hover,
+#skills .card .button-secondary:hover {
   background: rgba(0, 255, 65, 0.1);
   border-color: #00ff41;
   color: #00ff41;
@@ -1183,7 +1203,9 @@ input:focus, textarea:focus {
 
 /* Override the standard invert-hover for these cards */
 .news-grid .card:hover,
-#education .card:hover {
+#education .card:hover,
+#projects .card:hover,
+#skills .card:hover {
   background: #020c02;
   border-color: #00ff41;
   box-shadow: 0 0 24px rgba(0, 255, 65, 0.12), inset 0 0 24px rgba(0, 255, 65, 0.04);
@@ -1198,7 +1220,17 @@ input:focus, textarea:focus {
 #education .card:hover p,
 #education .card:hover .muted,
 #education .card:hover .tag,
-#education .card:hover a {
+#education .card:hover a,
+#projects .card:hover h3,
+#projects .card:hover p,
+#projects .card:hover .muted,
+#projects .card:hover .tag,
+#projects .card:hover a,
+#skills .card:hover h3,
+#skills .card:hover p,
+#skills .card:hover .muted,
+#skills .card:hover .tag,
+#skills .card:hover a {
   color: #00ff41 !important;
   border-color: rgba(0, 255, 65, 0.35) !important;
   background: transparent !important;
