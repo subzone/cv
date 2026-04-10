@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import me from '../me.jpg';
 import PipelineDiagram from './PipelineDiagram';
 
@@ -21,6 +22,12 @@ const About = () => {
             16+ years shaping cloud infrastructure across AWS and Azure.
             Leading teams, building platforms that scale.
           </p>
+          <Link
+            to="/contact"
+            className="hero-connect-btn"
+          >
+            Let&rsquo;s connect <FaArrowRight />
+          </Link>
         </div>
 
         <div className="hero-name-wrap">
@@ -95,11 +102,12 @@ const About = () => {
             </div>
 
             <div className="hero-actions">
+              <Link to="/contact" className="button-primary">Let&rsquo;s connect &rarr;</Link>
               <a
                 href="https://www.linkedin.com/in/subzone/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="button-primary"
+                className="button-secondary"
               >
                 <FaLinkedin /> LinkedIn
               </a>

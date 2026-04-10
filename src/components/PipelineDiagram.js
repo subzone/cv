@@ -7,7 +7,10 @@ const PipelineDiagram = () => {
         <span className="section-label">CI / CD</span>
         <span className="section-num">—</span>
       </div>
-      <h2 className="section-title" style={{ marginBottom: '3rem' }}>Deployment Pipeline</h2>
+      <h2 className="section-title" style={{ marginBottom: '0.75rem' }}>Deployment Pipeline</h2>
+      <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', opacity: 0.45, marginBottom: '3rem', letterSpacing: '0.01em' }}>
+        Live pipeline powering this site — not a diagram, this is the actual infrastructure.
+      </p>
 
       <div className="pipe-wrap">
 
