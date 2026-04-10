@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import me from '../me.jpg';
+import PipelineDiagram from './PipelineDiagram';
 
 const About = () => {
   return (
@@ -115,6 +116,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <PipelineDiagram />
     </>
   );
 };

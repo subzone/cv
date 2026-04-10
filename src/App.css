@@ -1096,6 +1096,202 @@ input:focus, textarea:focus {
   }
 }
 
+/* ─── Pipeline Diagram ───────────────────────────────────────────── */
+.pipe-wrap {
+  font-family: var(--font-mono);
+  color: #00ff41;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.pipe-row {
+  width: 100%;
+  display: flex;
+}
+
+.pipe-row--center {
+  justify-content: center;
+}
+
+.pipe-node {
+  background: #020c02;
+  border: 1px solid #00b33c;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 240px;
+  position: relative;
+}
+
+.pipe-node--source {
+  border-color: #00ff41;
+  box-shadow: 0 0 12px rgba(0,255,65,0.15);
+}
+
+.pipe-node--trigger {
+  border-color: #00ff41;
+  min-width: 420px;
+  text-align: center;
+  align-items: center;
+}
+
+.pipe-node--dest {
+  border-color: #00ff41;
+  box-shadow: 0 0 16px rgba(0,255,65,0.2);
+}
+
+.pipe-node-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  color: #00883a;
+  display: block;
+  margin-bottom: 0.1rem;
+}
+
+.pipe-node code {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: #00ff41;
+  background: none;
+  padding: 0;
+  display: block;
+}
+
+.pipe-node .pipe-dim {
+  color: #005522;
+}
+
+.pipe-connector--down {
+  width: 1px;
+  height: 2rem;
+  background: #00b33c;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pipe-connector--down::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #00b33c;
+}
+
+/* Branch bar — horizontal line splitting into two */
+.pipe-branch-bar {
+  display: flex;
+  width: 60%;
+  height: 1.5rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.pipe-branch-line--left,
+.pipe-branch-line--right {
+  flex: 1;
+  border-top: 1px solid #00b33c;
+  border-bottom: none;
+}
+
+.pipe-branch-line--left {
+  border-left: 1px solid #00b33c;
+}
+
+.pipe-branch-line--right {
+  border-right: 1px solid #00b33c;
+}
+
+.pipe-paths {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  width: 100%;
+  align-items: start;
+}
+
+.pipe-path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pipe-path-badge {
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  border: 1px solid;
+  margin-bottom: 0;
+}
+
+.pipe-path-badge--auto {
+  color: #00ff41;
+  border-color: #00b33c;
+  background: rgba(0,255,65,0.06);
+}
+
+.pipe-path-badge--manual {
+  color: #00ccff;
+  border-color: #0088bb;
+  background: rgba(0,200,255,0.06);
+}
+
+.pipe-path .pipe-node {
+  width: 100%;
+}
+
+.pipe-path-badge--manual ~ .pipe-connector--down,
+.pipe-path-badge--manual ~ .pipe-node,
+.pipe-path-badge--manual ~ .pipe-node code,
+.pipe-path-badge--manual ~ .pipe-dest-split .pipe-node {
+  border-color: #0088bb;
+  color: #00ccff;
+}
+
+.pipe-path-badge--manual ~ .pipe-node .pipe-node-label {
+  color: #006688;
+}
+
+.pipe-path-badge--manual ~ .pipe-node code {
+  color: #00ccff;
+}
+
+.pipe-path-badge--manual ~ .pipe-connector--down {
+  background: #0088bb;
+}
+
+.pipe-path-badge--manual ~ .pipe-connector--down::after {
+  border-top-color: #0088bb;
+}
+
+.pipe-dest-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .pipe-paths {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .pipe-node--trigger {
+    min-width: unset;
+    width: 100%;
+  }
+  .pipe-branch-bar {
+    display: none;
+  }
+}
+
 /* ─── Matrix / Console cards ─────────────────────────────────────── */
 .news-grid .card,
 #education .card,
