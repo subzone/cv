@@ -25,7 +25,7 @@ const PipelineDiagram = () => {
         <div className="pipe-row pipe-row--center">
           <div className="pipe-node pipe-node--trigger">
             <span className="pipe-node-label">GITHUB ACTIONS</span>
-            <code>on: push → auto &nbsp;|&nbsp; workflow_dispatch → manual</code>
+            <code>on: push &#8594; auto &nbsp;|&nbsp; workflow_dispatch &#8594; manual</code>
           </div>
         </div>
 
@@ -55,7 +55,7 @@ const PipelineDiagram = () => {
             <div className="pipe-connector pipe-connector--down" />
             <div className="pipe-node">
               <span className="pipe-node-label">HELM DEPLOY</span>
-              <code>kubectl → K8s cluster</code>
+              <code>kubectl &#8594; K8s cluster</code>
             </div>
             <div className="pipe-connector pipe-connector--down" />
             <div className="pipe-node pipe-node--dest">
@@ -70,18 +70,18 @@ const PipelineDiagram = () => {
             <div className="pipe-connector pipe-connector--down" />
             <div className="pipe-node">
               <span className="pipe-node-label">NPM BUILD</span>
-              <code>npm run build → /build</code>
+              <code>npm run build &#8594; /build</code>
             </div>
             <div className="pipe-connector pipe-connector--down" />
             <div className="pipe-node">
               <span className="pipe-node-label">S3 SYNC</span>
-              <code>aws s3 sync → 2 buckets</code>
+              <code>aws s3 sync &#8594; 2 buckets</code>
               <code className="pipe-dim">eu-central-1 · --delete</code>
             </div>
             <div className="pipe-connector pipe-connector--down" />
             <div className="pipe-node">
               <span className="pipe-node-label">CLOUDFRONT INVALIDATION</span>
-              <code>/* &nbsp;→&nbsp; 2 distributions</code>
+              <code>/* &nbsp;&#8594;&nbsp; 2 distributions</code>
             </div>
             <div className="pipe-connector pipe-connector--down" />
             <div className="pipe-dest-split">

@@ -44,21 +44,13 @@ const updates = [
     },
 ];
 
-const gallery = [
-    '/images/pic4.jpg',
-    '/images/pic5.jpg',
-    '/images/pic6.jpg',
-    '/images/pic1.jpg',
-    '/images/pic2.jpg',
-];
-
 const WhatsNew = () => {
     return (
         <section className="section no-print" id="whatsnew">
             <div className="section-header">
                 <div>
                     <div className="section-kicker">Latest</div>
-                    <h2 className="section-title">What’s New</h2>
+                    <h2 className="section-title">What's New</h2>
                 </div>
             </div>
 
@@ -73,13 +65,6 @@ const WhatsNew = () => {
                             </a>
                         )}
                     </div>
-                ))}
-            </div>
-
-            <h3 style={{ marginTop: '12px', color: 'var(--text-strong)' }}>Gallery</h3>
-            <div className="gallery-grid">
-                {gallery.map((src) => (
-                    <img src={src} alt="Gallery" key={src} loading="lazy" />
                 ))}
             </div>
         </section>
