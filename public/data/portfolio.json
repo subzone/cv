@@ -6,6 +6,20 @@
       "marketplace": "https://marketplace.visualstudio.com/items?itemName=subzone.ado-tf-agent",
       "github": "https://github.com/subzone/ado-tf-agent",
       "tags": ["Azure DevOps", "Terraform", "IaC", "CI/CD", "Extension"]
+    },
+    {
+      "name": "AI PR Reviewer",
+      "description": "Azure DevOps pipeline task that uses Claude AI to automatically review pull requests. Supports GitHub, GitLab, and Bitbucket, multiple AI backends (Anthropic, Azure AI Foundry, AWS Bedrock, Google Vertex AI), and exposes review verdicts as pipeline variables for use in deployment gates.",
+      "marketplace": "https://marketplace.visualstudio.com/items?itemName=subzone.ad-ai-pr-reviewer",
+      "github": "https://github.com/subzone/ad-ai-pr-reviewer",
+      "tags": ["Azure DevOps", "AI", "Claude", "PR Review", "CI/CD", "Extension"]
+    },
+    {
+      "name": "Terraform Drift",
+      "description": "Azure Pipelines task that detects infrastructure drift between your Terraform configuration and live state. Supports auto-reconciliation, manual approval workflows, and works with both Terraform and OpenTofu across Azure, AWS, and GCP.",
+      "marketplace": "https://marketplace.visualstudio.com/items?itemName=subzone.terraform-drift",
+      "github": "https://github.com/subzone/terraform-drift",
+      "tags": ["Azure DevOps", "Terraform", "OpenTofu", "Drift Detection", "GitOps", "IaC", "Extension"]
     }
   ]
 }
