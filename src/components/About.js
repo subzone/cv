@@ -67,9 +67,11 @@ const About = () => {
             </p>
             <p>
               FinOps practitioner with a track record of measurable cost reduction at
-              enterprise scale. I build custom AI agents, work across Azure OpenAI, Bedrock,
-              and Vertex AI, and apply spec-driven development to keep AI-assisted engineering
-              auditable. Always happy to talk infrastructure, AI tooling, or where the two meet.
+              enterprise scale — up to 35% savings against ~$1M annual infrastructure
+              baselines, achieved via rightsizing, reserved capacity strategy, and
+              architectural optimization. I build custom AI agents, work across Azure OpenAI,
+              Bedrock, and Vertex AI, and apply spec-driven development to keep AI-assisted
+              engineering auditable.
             </p>
 
             <div className="stat-grid">
@@ -78,16 +80,16 @@ const About = () => {
                 <div className="stat-l">Years in IT</div>
               </div>
               <div className="stat-item">
-                <div className="stat-n">5+</div>
-                <div className="stat-l">Teams Led</div>
+                <div className="stat-n">7</div>
+                <div className="stat-l">Peak Team Size</div>
               </div>
               <div className="stat-item">
-                <div className="stat-n">2</div>
-                <div className="stat-l">Cloud Platforms</div>
+                <div className="stat-n">~$1M</div>
+                <div className="stat-l">Annual Infra Owned</div>
               </div>
               <div className="stat-item">
-                <div className="stat-n">3+</div>
-                <div className="stat-l">OSS Extensions</div>
+                <div className="stat-n">35%</div>
+                <div className="stat-l">Peak Cost Reduction</div>
               </div>
             </div>
 
