@@ -51,6 +51,18 @@ const Education = () => {
                         <span className="tag">Coaching</span>
                     </div>
                 </div>
+                <div className="card">
+                    <h3>Anthropic Academy</h3>
+                    <p className="muted">AI fluency, Claude API, agentic development, and tooling — 2026</p>
+                    <div className="tag-row">
+                        <span className="tag">Claude 101</span>
+                        <span className="tag">AI Fluency</span>
+                        <span className="tag">Building with the Claude API</span>
+                        <span className="tag">Claude Code in Action</span>
+                        <span className="tag">Introduction to Agent Skills</span>
+                        <span className="tag">Introduction to Subagents</span>
+                    </div>
+                </div>
             </div>
         </section>
     );

@@ -1,4 +1,4 @@
-/* Minimal dark theme helpers; detailed styling lives in App.css */
+/* Minimal base helpers; main styling lives in App.css */
 
 body {
   background: var(--bg);
@@ -10,15 +10,24 @@ a { color: var(--text); }
 .button-12 {
   display: inline-flex;
   align-items: center;
-  padding: 6px 14px;
-  border-radius: 10px;
-  border: 1px solid var(--border-subtle);
-  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  padding: 5px 14px;
+  border: 1px solid var(--border-mid);
+  background: none;
   color: var(--text-strong);
-  font-weight: 700;
-  box-shadow: var(--shadow-soft);
+  font-weight: 400;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 200ms ease;
 }
 
-.button-12:focus { outline: 2px solid var(--accent); }
+.button-12:hover {
+  background: var(--text-strong);
+  color: var(--bg);
+  border-color: var(--text-strong);
+}
+
+.button-12:focus { outline: 2px solid var(--text-strong); }
 
 .star { color: gold; font-size: 18px; }

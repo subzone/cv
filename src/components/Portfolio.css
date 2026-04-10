@@ -1,0 +1,177 @@
+/* Extension cards — editorial style */
+.ext-grid {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  border: 1px solid var(--border-bright);
+  background: var(--border-bright);
+}
+
+.ext-card {
+  background: var(--surface);
+  border-radius: 0;
+  border: none;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: background var(--transition), color var(--transition);
+}
+
+.ext-card:hover {
+  background: var(--text-strong);
+  transform: none;
+  box-shadow: none;
+}
+
+.ext-card:hover .ext-name,
+.ext-card:hover .ext-publisher,
+.ext-card:hover .ext-desc,
+.ext-card:hover .ext-type-badge,
+.ext-card:hover .ext-free-badge,
+.ext-card:hover .tag {
+  color: var(--bg) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  background: transparent !important;
+}
+
+/* Badges row */
+.ext-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 1.25rem;
+}
+
+.ext-type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: 0;
+  background: none;
+  border: 1px solid var(--border-mid);
+  color: var(--text-muted);
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  transition: all var(--transition);
+}
+
+.ext-free-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 0;
+  background: none;
+  border: 1px solid var(--border-mid);
+  color: var(--success);
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  transition: all var(--transition);
+}
+
+/* Extension name */
+.ext-name {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--text-strong);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  transition: color var(--transition);
+}
+
+.ext-publisher {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  font-family: var(--font-ui);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color var(--transition);
+}
+
+.ext-publisher span {
+  color: var(--text-strong);
+  font-weight: 400;
+  transition: color var(--transition);
+}
+
+.ext-desc {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0 0 1.25rem;
+  flex: 1;
+  font-weight: 300;
+  transition: color var(--transition);
+}
+
+/* Action buttons */
+.ext-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.ext-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: 0;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--text-strong);
+  color: var(--bg);
+  border: 1px solid var(--text-strong);
+  transition: all var(--transition);
+  white-space: nowrap;
+  box-shadow: none;
+  font-family: var(--font-ui);
+}
+
+.ext-btn-primary:hover {
+  background: transparent;
+  color: var(--text-strong);
+  filter: none;
+  transform: none;
+  box-shadow: none;
+}
+
+.ext-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: 0;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-mid);
+  transition: all var(--transition);
+  white-space: nowrap;
+  font-family: var(--font-ui);
+}
+
+.ext-btn-secondary:hover {
+  border-color: var(--text-strong);
+  color: var(--text-strong);
+  background: none;
+  transform: none;
+}

@@ -22,7 +22,7 @@ function App() {
 
         <BrowserRouter>
           <Navbar />
-          <main className="page-shell">
+          <main className="page-shell" style={{ paddingTop: '60px' }}>
             <Routes>
               {routes.map(({ path, element }) => (
                 <Route key={path} path={path} element={element} />
