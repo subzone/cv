@@ -3,6 +3,26 @@ import "../App.css";
 
 const updates = [
     {
+        title: 'Open Source · Knowledge Master',
+        detail: 'Local-first knowledge graph for developers. Graph-native RAG with multi-language static analysis (Python, TypeScript, Go, Rust, Java, C#, Terraform), blast radius analysis, and MCP server for AI agents. Published on PyPI.',
+        link: 'https://github.com/subzone/knowledge-master',
+    },
+    {
+        title: 'Open Source · Agentctl',
+        detail: 'MD-driven agent CLI for code, infrastructure, and automation. 6 AI providers, 8 tools, zero SDK dependencies. Execute complex workflows from simple markdown files.',
+        link: 'https://github.com/subzone/Agentctl',
+    },
+    {
+        title: 'Open Source · MS 365 MCP Server',
+        detail: 'Model Context Protocol server for Microsoft 365 — 200+ tools covering Outlook, Calendar, OneDrive, Teams, SharePoint. Enables AI agents to interact with Microsoft Graph API.',
+        link: 'https://github.com/subzone/ms-365-mcp',
+    },
+    {
+        title: 'Open Source · AI Workstation Bootstrap',
+        detail: 'Automated setup for local-first AI coding workstations via Intune/MDM. Configures Ollama, Docker, VS Code, and AI tools in one deployment.',
+        link: 'https://github.com/subzone/ai-workstation-bootstrap',
+    },
+    {
         title: 'Azure DevOps · ADO Terraform Agent',
         detail: 'Extension that provisions self-hosted pipeline agents with Terraform pre-installed, enabling seamless IaC workflows directly within ADO pipelines.',
         link: 'https://marketplace.visualstudio.com/items?itemName=subzone.ado-tf-agent',
@@ -31,16 +51,6 @@ const updates = [
         title: 'GitHub Action · AI SSDLC Security Suite',
         detail: 'Published AI-powered SSDLC action to GitHub Marketplace — SAST, secret detection, SCA, IaC, AI triage, and STRIDE threat modeling in a single pipeline step.',
         link: 'https://github.com/marketplace/actions/ai-ssdlc-security-suite',
-    },
-    {
-        title: 'Multi-theme system',
-        detail: 'Implemented three themes (Dark, Ocean, Light) with persistent selection and redesigned navbar.',
-        link: null,
-    },
-    {
-        title: 'Multi-cloud hosting',
-        detail: 'Migrated CV hosting from Azure Storage to AWS CloudFront — dogfooding multi-cloud.',
-        link: null,
     },
 ];
 
