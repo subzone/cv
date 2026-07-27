@@ -21,7 +21,7 @@
     "react-stars": "^2.2.5",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.12",
-    "web-vitals": "^4.2.3"
+    "web-vitals": "^5.1.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
